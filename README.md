@@ -1,5 +1,5 @@
 # BuildSystemZero2One
-## vagrant
+## Vagrant
 1.Download url
 https://www.vagrantup.com/downloads.html
 ![alt text](https://github.com/iosoft2020/BuildSystemZero2One/blob/main/images/Vagrant1.PNG?raw=true)
@@ -8,7 +8,7 @@ https://www.vagrantup.com/downloads.html
 1.Download url
 https://www.virtualbox.org/wiki/Downloads
 
-![alt text](https://github.com/iosoft2020/BuildSystemZero2One/blob/main/images/Virtualbox.PNG?raw=true)
+![alt text](https://github.com/iosoft2020/BuildSystemZero2One/blob/main/images/Virtualbox1.PNG?raw=true)
 
 ## Centos
 ## Docker
