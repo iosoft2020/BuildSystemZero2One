@@ -1,2 +1,10 @@
 # BuildSystemZero2One
-Build System Zero to One
+## virtualbox
+## centos
+## docker
+## nginx
+## redis
+## mysql
+
+
+
