@@ -2,7 +2,7 @@
 ## Vagrant
 1.Download url
 https://www.vagrantup.com/downloads.html
-![alt text](https://github.com/iosoft2020/BuildSystemZero2One/blob/main/images/Vagrant1.PNG)
+![alt text](images/Vagrant1.PNG)
 
 ## Virtualbox
 1.Download url
