@@ -64,20 +64,25 @@ command:vagrant init centos/7</br>
 3.open C:\Users\xxxx and confirm Vagrantfile</br>
 ![alt text](images/Centos/centos5.png)</br>
 
-4.install vagrant-disksize plugin for specify the disk and memory size
+4.install vagrant-disksize plugin for specify the disk size</br>
+command:vagrant init centos/7</br>
 ![alt text](images/Centos/centos6.png)</br>
+![alt text](images/Centos/centos7.png)</br>
 
-4.edit Vagrantfile for specify the disk and memory size</br>
+5.edit Vagrantfile for specify the disk and memory size and ip</br>
 add:</br>
   config.disksize.size = '300GB' </br>
   config.vm.provider "virtualbox" do |vb| </br>
      vb.memory = "2048"                   </br>
   end </br>
-![alt text](images/Centos/centos7.png)</br>
-
-5.auto download centos and start </br>
-command:vagrant up</br>
+  config.vm.network "private_network", ip: "192.168.56.66"</br>
 ![alt text](images/Centos/centos8.png)</br>
+
+6.auto download centos and start </br>
+command:vagrant up</br>
+![alt text](images/Centos/centos9.png)</br>
+![alt text](images/Centos/centos10.png)</br>
+![alt text](images/Centos/centos11.png)</br>
 
 </br>
 </br>
