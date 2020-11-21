@@ -30,6 +30,12 @@ https://www.virtualbox.org/wiki/Downloads
 ![alt text](images/Virtualbox/Virtualbox9.png)</br>
 
 ## Centos(Vagrant+Oracle VM Virtualbox)
+1.confirm centos version from vagrant repository
+vagrant repository url: https://app.vagrantup.com/boxes/search
+![alt text](images/Centos/centos1.png)</br>
+![alt text](images/Centos/centos2.png)</br>
+
+
 ## Docker
 ## Nginx
 ## Openresty
