@@ -21,7 +21,7 @@ https://www.virtualbox.org/wiki/Downloads
 
 2.install</br>
 <img src="images/Virtualbox/Virtualbox2.png" width="200"></br>
-![alt text](images/Virtualbox/Virtualbox3.PNG)</br>
+![alt text](images/Virtualbox/Virtualbox3.png)</br>
 ![alt text](images/Virtualbox/Virtualbox4.png)</br>
 ![alt text](images/Virtualbox/Virtualbox5.png)</br>
 ![alt text](images/Virtualbox/Virtualbox6.png)</br>
