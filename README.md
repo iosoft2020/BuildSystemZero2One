@@ -29,7 +29,7 @@ https://www.virtualbox.org/wiki/Downloads
 ![alt text](images/Virtualbox/Virtualbox8.png)</br>
 ![alt text](images/Virtualbox/Virtualbox9.png)</br>
 
-## Centos
+## Centos(Vagrant+Oracle VM Virtualbox)
 ## Docker
 ## Nginx
 ## Openresty
