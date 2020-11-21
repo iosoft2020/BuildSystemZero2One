@@ -5,14 +5,14 @@ https://www.vagrantup.com/downloads.html
 ![alt text](images/Vagrant/Vagrant1.PNG)
 
 2.install</br>
-![alt text](images/Vagrant/Vagrant2.PNG)</br>
+![alt text](images/Vagrant/Vagrant2.png)</br>
 ![alt text](images/Vagrant/Vagrant3.PNG)</br>
-![alt text](images/Vagrant/Vagrant4.PNG)</br>
-![alt text](images/Vagrant/Vagrant5.PNG)</br>
-![alt text](images/Vagrant/Vagrant6.PNG)</br>
-![alt text](images/Vagrant/Vagrant7.PNG)</br>
-![alt text](images/Vagrant/Vagrant8.PNG)</br>
-![alt text](images/Vagrant/Vagrant9.PNG)</br>
+![alt text](images/Vagrant/Vagrant4.png)</br>
+![alt text](images/Vagrant/Vagrant5.png)</br>
+![alt text](images/Vagrant/Vagrant6.png)</br>
+![alt text](images/Vagrant/Vagrant7.png)</br>
+![alt text](images/Vagrant/Vagrant8.png)</br>
+![alt text](images/Vagrant/Vagrant9.png)</br>
 
 ## Virtualbox
 1.Download url
