@@ -59,6 +59,7 @@ vagrant repository url: https://app.vagrantup.com/boxes/search</br>
 2.init centos </br>
 command:
 >vagrant init centos/7
+
 ![alt text](images/Centos/centos3.png)</br>
 ![alt text](images/Centos/centos4.png)</br>
 
