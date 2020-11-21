@@ -65,7 +65,7 @@ command:vagrant init centos/7</br>
 ![alt text](images/Centos/centos5.png)</br>
 
 4.install vagrant-disksize plugin for specify the disk size</br>
-command:vagrant init centos/7</br>
+command:vagrant plugin install vagrant-disksize</br>
 ![alt text](images/Centos/centos6.png)</br>
 ![alt text](images/Centos/centos7.png)</br>
 
