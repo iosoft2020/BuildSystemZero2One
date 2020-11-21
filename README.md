@@ -102,13 +102,35 @@ root default password
 ![alt text](images/Centos/centos13.png)</br>
 
 7.clone vmdk to vdi 
->C:\Program Files\Oracle\VirtualBox\VBoxManage.exe" clonehd centos-7-1-1.x86_64.vmdk centos-7-1-1.x86_64_clone.vdi --format vdi
 ![alt text](images/Centos/centos14.png)</br>
 ![alt text](images/Centos/centos15.png)</br>
 ![alt text](images/Centos/centos16.png)</br>
 ![alt text](images/Centos/centos17.png)</br>
+
+>"C:\Program Files\Oracle\VirtualBox\VBoxManage.exe" clonehd centos-7-1-1.x86_64.vmdk centos-7-1-1.x86_64_clone.vdi --format vdi</br>
+
 ![alt text](images/Centos/centos18.png)</br>
 ![alt text](images/Centos/centos19.png)</br>
+
+>"C:\Program Files\Oracle\VirtualBox\VBoxManage.exe" modifyhd centos-7-1-1.x86_64_clone.vdi compact</br>
+
+![alt text](images/Centos/centos20.png)</br>
+
+>"C:\Program Files\Oracle\VirtualBox\VBoxManage.exe" modifyhd centos-7-1-1.x86_64_clone.vdi --resize 307200</br>
+
+![alt text](images/Centos/centos21.png)</br>
+
+>"C:\Program Files\Oracle\VirtualBox\VBoxManage.exe" clonehd centos-7-1-1.x86_64_clone.vdi centos-7-1-1.x86_64_vdi_2_vmdk.vmdk --format vmdk</br>
+
+![alt text](images/Centos/centos22.png)</br>
+![alt text](images/Centos/centos23.png)</br>
+![alt text](images/Centos/centos24.png)</br>
+![alt text](images/Centos/centos25.png)</br>
+![alt text](images/Centos/centos26.png)</br>
+![alt text](images/Centos/centos27.png)</br>
+![alt text](images/Centos/centos28.png)</br>
+![alt text](images/Centos/centos29.png)</br>
+![alt text](images/Centos/centos30.png)</br>
 
 </br>
 </br>
