@@ -61,7 +61,7 @@ command:vagrant init centos/7</br>
 ![alt text](images/Centos/centos3.png)</br>
 ![alt text](images/Centos/centos4.png)</br>
 
-3.open C:\Users\xxxx and confirm Vagrantfile
+3.open C:\Users\xxxx and confirm Vagrantfile</br>
 ![alt text](images/Centos/centos5.png)</br>
 
 4.edit Vagrantfile for specify the disk and memory size
