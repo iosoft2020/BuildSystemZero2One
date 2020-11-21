@@ -72,8 +72,8 @@ add:</br>
   end </br>
 ![alt text](images/Centos/centos6.png)</br>
 
-5.start centos </br>
-command:vagrant up/7</br>
+5.auto download centos and start </br>
+command:vagrant up</br>
 ![alt text](images/Centos/centos7.png)</br>
 
 </br>
