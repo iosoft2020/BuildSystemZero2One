@@ -17,10 +17,10 @@ https://www.vagrantup.com/downloads.html
 ## Oracle VM Virtualbox
 1.Download url
 https://www.virtualbox.org/wiki/Downloads
-![alt text](/images/Virtualbox/Virtualbox2.PNG?raw=true)
+![alt text](/images/Virtualbox/Virtualbox1.PNG?raw=true)
 
 2.install</br>
-<img src="images/Vagrant/Virtualbox2.png" width="200"></br>
+<img src="images/Virtualbox/Virtualbox2.png" width="200"></br>
 ![alt text](images/Virtualbox/Virtualbox3.PNG)</br>
 ![alt text](images/Virtualbox/Virtualbox4.png)</br>
 ![alt text](images/Virtualbox/Virtualbox5.png)</br>
