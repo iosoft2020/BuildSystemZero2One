@@ -55,6 +55,17 @@ https://www.virtualbox.org/wiki/Downloads
 vagrant repository url: https://app.vagrantup.com/boxes/search</br>
 ![alt text](images/Centos/centos1.png)</br>
 ![alt text](images/Centos/centos2.png)</br>
+
+2.init centos 
+![alt text](images/Centos/centos3.png)</br>
+![alt text](images/Centos/centos4.png)</br>
+
+3.open C:\Users\xxxx and confirm Vagrantfile
+![alt text](images/Centos/centos.png)</br>
+
+4.edit Vagrantfile for specify the disk and memory size
+![alt text](images/Centos/centos.png)</br>
+
 </br>
 </br>
 
