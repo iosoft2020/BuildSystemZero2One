@@ -101,6 +101,15 @@ root default password
 ![alt text](images/Centos/centos12.png)</br>
 ![alt text](images/Centos/centos13.png)</br>
 
+7.clone vmdk to vdi 
+>C:\Program Files\Oracle\VirtualBox\VBoxManage.exe" clonehd centos-7-1-1.x86_64.vmdk centos-7-1-1.x86_64_clone.vdi --format vdi
+![alt text](images/Centos/centos14.png)</br>
+![alt text](images/Centos/centos15.png)</br>
+![alt text](images/Centos/centos16.png)</br>
+![alt text](images/Centos/centos17.png)</br>
+![alt text](images/Centos/centos18.png)</br>
+![alt text](images/Centos/centos19.png)</br>
+
 </br>
 </br>
 
