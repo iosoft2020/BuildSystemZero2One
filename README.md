@@ -84,6 +84,12 @@ command:vagrant up</br>
 ![alt text](images/Centos/centos10.png)</br>
 ![alt text](images/Centos/centos11.png)</br>
 
+6.ssh </br>
+command:vagrant ssh</br>
+root default password :vagrant</br>
+![alt text](images/Centos/centos12.png)</br>
+![alt text](images/Centos/centos13.png)</br>
+
 </br>
 </br>
 
