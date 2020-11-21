@@ -51,7 +51,7 @@ https://www.virtualbox.org/wiki/Downloads
 
 <a id="centos"></a>
 ## Centos(Vagrant+Oracle VM Virtualbox)
-1.confirm centos version from vagrant repository</br>
+1.search and confirm centos version from vagrant repository</br>
 vagrant repository url: https://app.vagrantup.com/boxes/search</br>
 ![alt text](images/Centos/centos1.png)</br>
 ![alt text](images/Centos/centos2.png)</br>
