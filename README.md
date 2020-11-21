@@ -57,6 +57,7 @@ vagrant repository url: https://app.vagrantup.com/boxes/search</br>
 ![alt text](images/Centos/centos2.png)</br>
 
 2.init centos </br>
+
 >vagrant init centos/7
 
 ![alt text](images/Centos/centos3.png)</br>
@@ -66,28 +67,37 @@ vagrant repository url: https://app.vagrantup.com/boxes/search</br>
 ![alt text](images/Centos/centos5.png)</br>
 
 4.install vagrant-disksize plugin for specify the disk size</br>
-command:>vagrant plugin install vagrant-disksize</br>
+
+>vagrant plugin install vagrant-disksize</br>
+
 ![alt text](images/Centos/centos6.png)</br>
 ![alt text](images/Centos/centos7.png)</br>
 
 5.edit Vagrantfile for specify the disk and memory size and ip</br>
-add:</br>
-  config.disksize.size = '300GB' </br>
-  config.vm.provider "virtualbox" do |vb| </br>
-     vb.memory = "2048"                   </br>
-  end </br>
-  config.vm.network "private_network", ip: "192.168.56.66"</br>
+
+>  config.disksize.size = '300GB'
+>  config.vm.provider "virtualbox" do |vb| 
+>     vb.memory = "2048"                   
+>  end 
+>  config.vm.network "private_network", ip: "192.168.56.66"
+
 ![alt text](images/Centos/centos8.png)</br>
 
 6.auto download centos and start </br>
-command:vagrant up</br>
+
+>vagrant up
+
 ![alt text](images/Centos/centos9.png)</br>
 ![alt text](images/Centos/centos10.png)</br>
 ![alt text](images/Centos/centos11.png)</br>
 
 6.ssh </br>
-command:vagrant ssh</br>
-root default password :vagrant</br>
+
+>vagrant ssh
+
+root default password 
+>vagrant
+
 ![alt text](images/Centos/centos12.png)</br>
 ![alt text](images/Centos/centos13.png)</br>
 
