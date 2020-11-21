@@ -5,6 +5,7 @@ https://www.vagrantup.com/downloads.html
 ![alt text](images/Vagrant/Vagrant1.PNG)
 
 2.install</br>
+<img src="images/Vagrant/Vagrant2.png" width="200">
 ![alt text](images/Vagrant/Vagrant2.png)</br>
 ![alt text](images/Vagrant/Vagrant3.PNG)</br>
 ![alt text](images/Vagrant/Vagrant4.png)</br>
