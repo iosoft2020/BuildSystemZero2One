@@ -57,7 +57,6 @@ vagrant repository url: https://app.vagrantup.com/boxes/search</br>
 ![alt text](images/Centos/centos2.png)</br>
 
 2.init centos </br>
-command:
 >vagrant init centos/7
 
 ![alt text](images/Centos/centos3.png)</br>
@@ -67,7 +66,7 @@ command:
 ![alt text](images/Centos/centos5.png)</br>
 
 4.install vagrant-disksize plugin for specify the disk size</br>
-command:vagrant plugin install vagrant-disksize</br>
+command:>vagrant plugin install vagrant-disksize</br>
 ![alt text](images/Centos/centos6.png)</br>
 ![alt text](images/Centos/centos7.png)</br>
 
