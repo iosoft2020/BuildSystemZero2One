@@ -16,7 +16,7 @@
 
 <a id="vagrant"></a>
 ## Vagrant
-- 1.Download url
+- Download url
 https://www.vagrantup.com/downloads.html
 ![alt text](images/Vagrant/Vagrant1.PNG)
 
@@ -37,7 +37,7 @@ https://www.vagrantup.com/downloads.html
 https://www.virtualbox.org/wiki/Downloads
 ![alt text](/images/Virtualbox/Virtualbox1.PNG?raw=true)
 
-2.install</br>
+- install</br>
 <img src="images/Virtualbox/Virtualbox2.png" width="200"></br>
 ![alt text](images/Virtualbox/Virtualbox3.png)</br>
 ![alt text](images/Virtualbox/Virtualbox4.png)</br>
