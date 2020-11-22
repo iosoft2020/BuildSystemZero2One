@@ -16,8 +16,9 @@
 
 <a id="vagrant"></a>
 ## Vagrant
-- Download url
-https://www.vagrantup.com/downloads.html
+- Download url</br>
+>https://www.vagrantup.com/downloads.html
+
 ![alt text](images/Vagrant/Vagrant1.PNG)
 
 2.install</br>
