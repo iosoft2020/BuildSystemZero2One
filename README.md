@@ -1,31 +1,33 @@
 # BuildSystemZero2One
 - [Vagrant](#vagrant)
+  - [download](#virtualbox_download)
+  - [install](#virtualbox_install)
+- [Oracle VM Virtualbox](#virtualbox)
   - Download
   - install
-2. [Oracle VM Virtualbox](#virtualbox)
-- Download
-- install
-3. [Centos(Vagrant+Oracle VM Virtualbox)](#centos)
-4. [Docker](#docker)
-5. [Nginx](#nginx)
-6. [Openresty](#openresty)
-7. [Redis](#redis)
-8. [Mysql](#mysql)
-9. [GitLab](#gitLab)
-10. [Jenkins](#jenkins)
-11. [Swagger](#swagger)
-12. [SpringBoot](#springBoot)
-13. [Redis+Lua](#redisLua)
-14. [Jmeter](#jmeter)
+- [Centos(Vagrant+Oracle VM Virtualbox)](#centos)
+- [Docker](#docker)
+- [Nginx](#nginx)
+- [Openresty](#openresty)
+- [Redis](#redis)
+- [Mysql](#mysql)
+- [GitLab](#gitLab)
+- [Jenkins](#jenkins)
+- [Swagger](#swagger)
+- [SpringBoot](#springBoot)
+- [Redis+Lua](#redisLua)
+- [Jmeter](#jmeter)
 
 <a id="vagrant"></a>
 ## Vagrant
+
+<a id="virtualbox_download"></a>
 - Download</br>
 Download url</br>
 >https://www.vagrantup.com/downloads.html
 
 ![alt text](images/Vagrant/Vagrant1.PNG)
-
+<a id="virtualbox_install"></a>
 - install</br>
 <img src="images/Vagrant/Vagrant2.png" width="200"></br>
 ![alt text](images/Vagrant/Vagrant3.PNG)</br>
