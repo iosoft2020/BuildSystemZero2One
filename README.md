@@ -73,10 +73,10 @@ vagrant repository url:</br>
 
 - edit Vagrantfile for specify the memory size and ip</br>
 
->  config.vm.provider "virtualbox" do |vb| 
->     vb.memory = "2048"                   
->  end 
->  config.vm.network "private_network", ip: "192.168.56.66"
+>  config.vm.provider "virtualbox" do |vb| </br>
+>     vb.memory = "2048"                   </br>
+>  end </br>
+>  config.vm.network "private_network", ip: "192.168.56.66"</br>
 
 ![alt text](images/Centos/centos8.png)</br>
 
