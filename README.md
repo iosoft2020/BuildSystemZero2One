@@ -130,6 +130,20 @@ root default password
 ![alt text](images/Centos/centos27.png)</br>
 ![alt text](images/Centos/centos28.png)</br>
 
+- format the new disk
+![alt text](images/Centos/centos29.png)</br>
+![alt text](images/Centos/centos30.png)</br>
+![alt text](images/Centos/centos31.png)</br>
+![alt text](images/Centos/centos32.png)</br>
+![alt text](images/Centos/centos33.png)</br>
+![alt text](images/Centos/centos34.png)</br>
+![alt text](images/Centos/centos35.png)</br>
+![alt text](images/Centos/centos36.png)</br>
+![alt text](images/Centos/centos37.png)</br>
+![alt text](images/Centos/centos38.png)</br>
+![alt text](images/Centos/centos39.png)</br>
+![alt text](images/Centos/centos40.png)</br>
+
 </br>
 </br>
 
