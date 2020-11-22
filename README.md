@@ -21,7 +21,7 @@
 
 ![alt text](images/Vagrant/Vagrant1.PNG)
 
-2.install</br>
+- install</br>
 <img src="images/Vagrant/Vagrant2.png" width="200"></br>
 ![alt text](images/Vagrant/Vagrant3.PNG)</br>
 ![alt text](images/Vagrant/Vagrant4.png)</br>
@@ -34,8 +34,9 @@
 </br>
 <a id="virtualbox"></a>
 ## Oracle VM Virtualbox
-1.Download url
-https://www.virtualbox.org/wiki/Downloads
+- Download url</br>
+>https://www.virtualbox.org/wiki/Downloads
+
 ![alt text](/images/Virtualbox/Virtualbox1.PNG?raw=true)
 
 - install</br>
@@ -52,29 +53,31 @@ https://www.virtualbox.org/wiki/Downloads
 
 <a id="centos"></a>
 ## Centos(Vagrant+Oracle VM Virtualbox)
-1.search and confirm centos version from vagrant repository</br>
-vagrant repository url: https://app.vagrantup.com/boxes/search</br>
+- search and confirm centos version from vagrant repository</br>
+vagrant repository url:</br>
+>https://app.vagrantup.com/boxes/search</br>
+
 ![alt text](images/Centos/centos1.png)</br>
 ![alt text](images/Centos/centos2.png)</br>
 
-2.init centos </br>
+- init centos </br>
 
 >vagrant init centos/7
 
 ![alt text](images/Centos/centos3.png)</br>
 ![alt text](images/Centos/centos4.png)</br>
 
-3.open C:\Users\xxxx and confirm Vagrantfile</br>
+- open C:\Users\xxxx and confirm Vagrantfile</br>
 ![alt text](images/Centos/centos5.png)</br>
 
-4.install vagrant-disksize plugin for specify the disk size</br>
+- install vagrant-disksize plugin for specify the disk size</br>
 
 >vagrant plugin install vagrant-disksize</br>
 
 ![alt text](images/Centos/centos6.png)</br>
 ![alt text](images/Centos/centos7.png)</br>
 
-5.edit Vagrantfile for specify the disk and memory size and ip</br>
+- edit Vagrantfile for specify the disk and memory size and ip</br>
 
 >  config.disksize.size = '300GB'
 >  config.vm.provider "virtualbox" do |vb| 
@@ -84,7 +87,7 @@ vagrant repository url: https://app.vagrantup.com/boxes/search</br>
 
 ![alt text](images/Centos/centos8.png)</br>
 
-6.auto download centos and start </br>
+- auto download centos and start </br>
 
 >vagrant up
 
@@ -92,7 +95,7 @@ vagrant repository url: https://app.vagrantup.com/boxes/search</br>
 ![alt text](images/Centos/centos10.png)</br>
 ![alt text](images/Centos/centos11.png)</br>
 
-6.ssh </br>
+- ssh </br>
 
 >vagrant ssh
 
@@ -102,7 +105,7 @@ root default password
 ![alt text](images/Centos/centos12.png)</br>
 ![alt text](images/Centos/centos13.png)</br>
 
-7.clone vmdk to vdi 
+- clone vmdk to vdi 
 ![alt text](images/Centos/centos14.png)</br>
 ![alt text](images/Centos/centos15.png)</br>
 ![alt text](images/Centos/centos16.png)</br>
