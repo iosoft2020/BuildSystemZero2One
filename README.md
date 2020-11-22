@@ -1,10 +1,10 @@
 # BuildSystemZero2One
 - [Vagrant](#vagrant)
-  - [download](#vagrant_download)
-  - [install](#vagrant_install)
+  - [Download](#vagrant_download)
+  - [Install](#vagrant_install)
 - [Oracle VM Virtualbox](#virtualbox)
-  - [download](#virtualbox_download)
-  - [install](#virtualbox_install)
+  - [Download](#virtualbox_download)
+  - [Install](#virtualbox_install)
 - [Centos(Vagrant+Oracle VM Virtualbox)](#centos)
 - [Docker](#docker)
 - [Nginx](#nginx)
@@ -28,7 +28,7 @@ Download url</br>
 
 ![alt text](images/Vagrant/Vagrant1.PNG)
 <a id="vagrant_install"></a>
-- install</br>
+- Install</br>
 <img src="images/Vagrant/Vagrant2.png" width="200"></br>
 ![alt text](images/Vagrant/Vagrant3.PNG)</br>
 ![alt text](images/Vagrant/Vagrant4.png)</br>
@@ -50,7 +50,7 @@ Download url</br>
 ![alt text](/images/Virtualbox/Virtualbox1.PNG?raw=true)
 
 <a id="virtualbox_install"></a>
-- install</br>
+- Install</br>
 <img src="images/Virtualbox/Virtualbox2.png" width="200"></br>
 ![alt text](images/Virtualbox/Virtualbox3.png)</br>
 ![alt text](images/Virtualbox/Virtualbox4.png)</br>
