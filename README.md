@@ -16,7 +16,7 @@
 
 <a id="vagrant"></a>
 ## Vagrant
-1.Download url
+-1.Download url
 https://www.vagrantup.com/downloads.html
 ![alt text](images/Vagrant/Vagrant1.PNG)
 
