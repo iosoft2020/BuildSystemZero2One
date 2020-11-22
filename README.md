@@ -1,7 +1,7 @@
 # BuildSystemZero2One
-1. [Vagrant](#vagrant)
-- Download
-- install
+- [Vagrant](#vagrant)
+  - Download
+  - install
 2. [Oracle VM Virtualbox](#virtualbox)
 - Download
 - install
