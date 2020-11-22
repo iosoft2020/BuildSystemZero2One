@@ -76,9 +76,10 @@ vagrant repository url:</br>
 >  config.vm.provider "virtualbox" do |vb| </br>
 >     vb.memory = "2048"                   </br>
 >  end </br>
+>
 >  config.vm.network "private_network", ip: "192.168.56.66"</br>
 
-![alt text](images/Centos/centos8.png)</br>
+![alt text](images/Centos/centos6.png)</br>
 
 - auto download centos and start </br>
 
