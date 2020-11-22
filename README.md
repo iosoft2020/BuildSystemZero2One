@@ -128,7 +128,7 @@ root default password
 ![alt text](images/Centos/centos25.png)</br>
 ![alt text](images/Centos/centos26.png)</br>
 ![alt text](images/Centos/centos27.png)</br>
-![alt text](images/Centos/centos29.png)</br>
+![alt text](images/Centos/centos28.png)</br>
 
 </br>
 </br>
