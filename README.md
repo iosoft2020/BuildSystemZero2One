@@ -71,20 +71,12 @@ vagrant repository url:</br>
 - open C:\Users\xxxx and confirm Vagrantfile</br>
 ![alt text](images/Centos/centos5.png)</br>
 
-- install vagrant-disksize plugin for specify the disk size</br>
+- edit Vagrantfile for specify the memory size and ip</br>
 
->vagrant plugin install vagrant-disksize</br>
-
-![alt text](images/Centos/centos6.png)</br>
-![alt text](images/Centos/centos7.png)</br>
-
-- edit Vagrantfile for specify the disk and memory size and ip</br>
-
->  config.disksize.size = '300GB'
->  config.vm.provider "virtualbox" do |vb| 
->     vb.memory = "2048"                   
->  end 
->  config.vm.network "private_network", ip: "192.168.56.66"
+>  config.vm.provider "virtualbox" do |vb| </br>
+>     vb.memory = "2048"                   </br>
+>  end </br>
+>  config.vm.network "private_network", ip: "192.168.56.66"</br>
 
 ![alt text](images/Centos/centos8.png)</br>
 
