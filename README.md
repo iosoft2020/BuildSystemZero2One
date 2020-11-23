@@ -16,6 +16,14 @@
   - [Ssh and use root login](#centos_ssh_and_use_root_login)
   - [Format the new disk](#centos_format_the_new_disk)
 - [Docker](#docker)
+  - [Remove default docker](#docker_remove_default_docker)
+  - [Install dependent package](#docker_install_dependent_package)
+  - [Set docker download repository](#docker_set_docker_download_repository)
+  - [Update yum package index](#docker_update_yum_package_index)
+  - [Install docker](#docker_install_docker)
+  - [Start docker when system start](#docker_start_docker_when_system_start)
+  - [Start docker](#docker_start_docker)
+  - [Confirm docker version](#docker_confirm_docker_version)
 - [Nginx](#nginx)
 - [Openresty](#openresty)
 - [Redis](#redis)
@@ -214,12 +222,14 @@ vagrant repository url:</br>
 <a id="docker"></a>
 ## Docker
 
+<a id="docker_remove_default_docker"></a>
 - Remove default docker
 >yum remove docker docker-common docker-selinux docker-engine</br>
 
 ![alt text](images/Docker/docker1.png)</br>
 ![alt text](images/Docker/docker2.png)</br>
 
+<a id="docker_install_dependent_package"></a>
 - Install dependent package
 >yum install -y yum-utils device-mapper-persistent-data lvm2</br>
 
@@ -227,18 +237,21 @@ vagrant repository url:</br>
 ![alt text](images/Docker/docker4.png)</br>
 ![alt text](images/Docker/docker5.png)</br>
 
+<a id="docker_set_docker_download_repository"></a>
 - Set docker download repository
 >yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo</br>
 
 ![alt text](images/Docker/docker6.png)</br>
 ![alt text](images/Docker/docker7.png)</br>
 
+<a id="docker_update_yum_package_index"></a>
 - Update yum package index
 >yum makecache fast</br>
 
 ![alt text](images/Docker/docker8.png)</br>
 ![alt text](images/Docker/docker9.png)</br>
 
+<a id="docker_install_docker"></a>
 - Install docker
 >yum install docker-ce</br>
 
@@ -247,17 +260,20 @@ vagrant repository url:</br>
 ![alt text](images/Docker/docker12.png)</br>
 ![alt text](images/Docker/docker13.png)</br>
 
+<a id="docker_start_docker_when_system_start"></a>
 - Start docker when system start
 >systemctl enable docker</br>
 
 ![alt text](images/Docker/docker14.png)</br>
 
+<a id="docker_start_docker"></a>
 - Start docker
 >systemctl start docker</br>
 
 ![alt text](images/Docker/docker15.png)</br>
 ![alt text](images/Docker/docker16.png)</br>
 
+<a id="docker_confirm_docker_version"></a>
 - Confirm docker version
 >docker version</br>
 
