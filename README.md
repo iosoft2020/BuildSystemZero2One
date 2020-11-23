@@ -213,37 +213,56 @@ vagrant repository url:</br>
 
 <a id="docker"></a>
 ## Docker
+
+- Remove default docker
 >yum remove docker docker-common docker-selinux docker-engine</br>
 
 ![alt text](images/Docker/docker1.png)</br>
-
->yum install -y yum-utils device-mapper-persistent-data lvm2</br>
-
 ![alt text](images/Docker/docker2.png)</br>
 
->yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo</br>
+- Install dependent package
+>yum install -y yum-utils device-mapper-persistent-data lvm2</br>
 
 ![alt text](images/Docker/docker3.png)</br>
-
->yum makecache fast</br>
-
 ![alt text](images/Docker/docker4.png)</br>
-
->yum install docker-ce</br>
-
 ![alt text](images/Docker/docker5.png)</br>
 
->systemctl enable docker</br>
+- Set docker download repository
+>yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo</br>
 
 ![alt text](images/Docker/docker6.png)</br>
-
->systemctl start docker</br>
-
 ![alt text](images/Docker/docker7.png)</br>
 
->docker version</br>
+- Update yum package index
+>yum makecache fast</br>
 
 ![alt text](images/Docker/docker8.png)</br>
+![alt text](images/Docker/docker9.png)</br>
+
+- Install docker
+>yum install docker-ce</br>
+
+![alt text](images/Docker/docker10.png)</br>
+![alt text](images/Docker/docker11.png)</br>
+![alt text](images/Docker/docker12.png)</br>
+![alt text](images/Docker/docker13.png)</br>
+
+- Start docker when system start
+>systemctl enable docker</br>
+
+![alt text](images/Docker/docker14.png)</br>
+
+- Start docker
+>systemctl start docker</br>
+
+![alt text](images/Docker/docker15.png)</br>
+![alt text](images/Docker/docker16.png)</br>
+
+- Confirm docker version
+>docker version</br>
+
+![alt text](images/Docker/docker17.png)</br>
+![alt text](images/Docker/docker18.png)</br>
 
 </br>
 </br>
