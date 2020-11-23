@@ -92,68 +92,105 @@ vagrant repository url:</br>
 
 ![alt text](images/Centos/centos6.png)</br>
 
-- auto download centos and start </br>
-
->vagrant up
+- Vagrant install vagrant-disksize plugin</br>
+>vagrant plugin install vagrant-disksize
 
 ![alt text](images/Centos/centos7.png)</br>
 ![alt text](images/Centos/centos8.png)</br>
+
+- auto download centos and start </br>
+
 ![alt text](images/Centos/centos9.png)</br>
 
-- ssh </br>
-
->vagrant ssh
-
-root default password 
->vagrant
+>vagrant up</br>
 
 ![alt text](images/Centos/centos10.png)</br>
 ![alt text](images/Centos/centos11.png)</br>
-
-- increase disk size on a Vagrant VM using VirtualBox
 ![alt text](images/Centos/centos12.png)</br>
+
+- Confirm resize status </br>
+
 ![alt text](images/Centos/centos13.png)</br>
+
+- Ssh and use root login </br>
+
+>vagrant ssh</br>
+
 ![alt text](images/Centos/centos14.png)</br>
+
+>su root</br>
+root default password </br>
+>vagrant</br>
+
 ![alt text](images/Centos/centos15.png)</br>
 
->"C:\Program Files\Oracle\VirtualBox\VBoxManage.exe" clonehd centos-7-1-1.x86_64.vmdk centos-7-1-1.x86_64_clone.vdi --format vdi</br>
+- format the new disk
+>df -hT</br>
 
-![alt text](images/Centos/centos16.png)</br>
 ![alt text](images/Centos/centos17.png)</br>
-
->"C:\Program Files\Oracle\VirtualBox\VBoxManage.exe" modifyhd centos-7-1-1.x86_64_clone.vdi compact</br>
-
 ![alt text](images/Centos/centos18.png)</br>
 
->"C:\Program Files\Oracle\VirtualBox\VBoxManage.exe" modifyhd centos-7-1-1.x86_64_clone.vdi --resize 307200</br>
+>fdisk -l</br>
 
 ![alt text](images/Centos/centos19.png)</br>
-
->"C:\Program Files\Oracle\VirtualBox\VBoxManage.exe" clonehd centos-7-1-1.x86_64_clone.vdi centos-7-1-1.x86_64_vdi_2_vmdk.vmdk --format vmdk</br>
-
 ![alt text](images/Centos/centos20.png)</br>
+
+>fdisk /dev/sda</br>
+
 ![alt text](images/Centos/centos21.png)</br>
+
+>d</br>
+
 ![alt text](images/Centos/centos22.png)</br>
+
+>n</br>
+
 ![alt text](images/Centos/centos23.png)</br>
+
+>p</br>
+
 ![alt text](images/Centos/centos24.png)</br>
+
+>Enter key</br>
+
 ![alt text](images/Centos/centos25.png)</br>
+
+>Enter key</br>
+
 ![alt text](images/Centos/centos26.png)</br>
+
+>Enter key</br>
+
 ![alt text](images/Centos/centos27.png)</br>
+
+>p</br>
+
 ![alt text](images/Centos/centos28.png)</br>
 
-- format the new disk
+>w</br>
+
 ![alt text](images/Centos/centos29.png)</br>
 ![alt text](images/Centos/centos30.png)</br>
+
+>rebbot</br>
+
 ![alt text](images/Centos/centos31.png)</br>
+
+>df -hT</br>
+
 ![alt text](images/Centos/centos32.png)</br>
 ![alt text](images/Centos/centos33.png)</br>
+
+>xfs_growfs / -d</br>
+
 ![alt text](images/Centos/centos34.png)</br>
 ![alt text](images/Centos/centos35.png)</br>
+
+>df -hT</br>
+
 ![alt text](images/Centos/centos36.png)</br>
 ![alt text](images/Centos/centos37.png)</br>
-![alt text](images/Centos/centos38.png)</br>
-![alt text](images/Centos/centos39.png)</br>
-![alt text](images/Centos/centos40.png)</br>
+
 
 </br>
 </br>
