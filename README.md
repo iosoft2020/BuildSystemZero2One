@@ -6,6 +6,15 @@
   - [Download](#virtualbox_download)
   - [Install](#virtualbox_install)
 - [Centos(Vagrant+Oracle VM Virtualbox)](#centos)
+  - [Search and confirm centos version from vagrant repository](#centos_search_and_confirm_centos_version_from_vagrant_repository)
+  - [Init centos](#centos_init_centos)
+  - [Open user dir and confirm Vagrantfile](#centos_open_user_dir_confirm_Vagrantfile)
+  - [Edit Vagrantfile for specify the disk and the memory size and ip](#centos_edit_Vagrantfile_for_specify_the_disk_and_the_memory_size_and_ip)
+  - [Install vagrant-disksize plugin](#centos_install_vagrant_disksize_plugin)
+  - [Auto download centos and start](#centos_auto_download_centos_and_start)
+  - [Confirm resize status](#centos_confirm_resize_status)
+  - [Ssh and use root login](#centos_ssh_and_use_root_login)
+  - [Format the new disk](#centos_format_the_new_disk)
 - [Docker](#docker)
 - [Nginx](#nginx)
 - [Openresty](#openresty)
@@ -64,24 +73,28 @@ Download url</br>
 
 <a id="centos"></a>
 ## Centos(Vagrant+Oracle VM Virtualbox)
-- search and confirm centos version from vagrant repository</br>
+<a id="centos_search_and_confirm_centos_version_from_vagrant_repository"></a>
+- Search and confirm centos version from vagrant repository</br>
 vagrant repository url:</br>
 >https://app.vagrantup.com/boxes/search</br>
 
 ![alt text](images/Centos/centos1.png)</br>
 ![alt text](images/Centos/centos2.png)</br>
 
-- init centos </br>
+<a id="centos_init_centos"></a>
+- Init centos </br>
 
 >vagrant init centos/7
 
 ![alt text](images/Centos/centos3.png)</br>
 ![alt text](images/Centos/centos4.png)</br>
 
-- open C:\Users\xxxx and confirm Vagrantfile</br>
+<a id="centos_open_user_dir_confirm_Vagrantfile"></a>
+- Open C:\Users\xxxx and confirm Vagrantfile</br>
 ![alt text](images/Centos/centos5.png)</br>
 
-- edit Vagrantfile for specify the disk and the memory size and ip</br>
+<a id="centos_edit_Vagrantfile_for_specify_the_disk_and_the_memory_size_and_ip"></a>
+- Edit Vagrantfile for specify the disk and the memory size and ip</br>
 
 >  config.disksize.size = '300GB'</br>
 >  config.vm.provider "virtualbox" do |vb| </br>
@@ -92,13 +105,15 @@ vagrant repository url:</br>
 
 ![alt text](images/Centos/centos6.png)</br>
 
-- Vagrant install vagrant-disksize plugin</br>
+<a id="centos_install_vagrant_disksize_plugin"></a>
+- Install vagrant-disksize plugin</br>
 >vagrant plugin install vagrant-disksize
 
 ![alt text](images/Centos/centos7.png)</br>
 ![alt text](images/Centos/centos8.png)</br>
 
-- auto download centos and start </br>
+<a id="centos_auto_download_centos_and_start"></a>
+- Auto download centos and start </br>
 
 ![alt text](images/Centos/centos9.png)</br>
 
@@ -108,23 +123,24 @@ vagrant repository url:</br>
 ![alt text](images/Centos/centos11.png)</br>
 ![alt text](images/Centos/centos12.png)</br>
 
+<a id="centos_confirm_resize_status"></a>
 - Confirm resize status </br>
 
 ![alt text](images/Centos/centos13.png)</br>
 
+<a id="centos_ssh_and_use_root_login"></a>
 - Ssh and use root login </br>
 
 >vagrant ssh</br>
 
 ![alt text](images/Centos/centos14.png)</br>
 
->su root</br>
-root default password </br>
->vagrant</br>
+>su root(root default password:vagrant)</br>
 
 ![alt text](images/Centos/centos15.png)</br>
 
-- format the new disk
+<a id="centos_format_the_new_disk"></a>
+- Format the new disk
 >df -hT</br>
 
 ![alt text](images/Centos/centos17.png)</br>
@@ -172,7 +188,7 @@ root default password </br>
 ![alt text](images/Centos/centos29.png)</br>
 ![alt text](images/Centos/centos30.png)</br>
 
->rebbot</br>
+>reboot</br>
 
 ![alt text](images/Centos/centos31.png)</br>
 
