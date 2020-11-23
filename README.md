@@ -81,8 +81,9 @@ vagrant repository url:</br>
 - open C:\Users\xxxx and confirm Vagrantfile</br>
 ![alt text](images/Centos/centos5.png)</br>
 
-- edit Vagrantfile for specify the memory size and ip</br>
+- edit Vagrantfile for specify the disk and the memory size and ip</br>
 
+>  config.disksize.size = '300GB'</br>
 >  config.vm.provider "virtualbox" do |vb| </br>
 >     vb.memory = "2048"                   </br>
 >  end </br>
