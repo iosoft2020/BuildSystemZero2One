@@ -315,6 +315,22 @@ vagrant repository url:</br>
 
 <a id="swagger"></a>
 ## Swagger
+
+- Swagger maven
+>        <dependency></br>
+>            <groupId>io.springfox</groupId></br>
+>            <artifactId>springfox-swagger2</artifactId></br>
+>            <version>2.9.2</version></br>
+>        </dependency></br>
+>
+>        <dependency></br>
+>            <groupId>io.springfox</groupId></br>
+>            <artifactId>springfox-swagger-ui</artifactId></br>
+>            <version>2.9.2</version></br>
+>        </dependency></br>
+
+- Localhost url</br>
+>http://localhost:8080/swagger-ui.html
 </br>
 </br>
 <a id="springBoot"></a>
