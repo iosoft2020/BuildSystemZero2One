@@ -395,7 +395,7 @@ public class MySwaggerConfig {
     private ApiInfo apiInfo() {
 
         Contact contack = new Contact("iosoft2020", "https://github.com/iosoft2020/BuildSystemZero2One",
-                "liwei.duan@hotmail.com");
+                "xxx@xxx.com");
 
         return new ApiInfo("MySwaggerAPI Document", "MySwaggerApi", "1.0",
                 "https://github.com/iosoft2020/BuildSystemZero2One/blob/main/README.md#swagger",
