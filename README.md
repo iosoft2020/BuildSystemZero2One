@@ -33,9 +33,10 @@
 - [Swagger](#swagger)
   - [Maven dependency](#swagger_maven_dependency)
   - [Localhost Url](#swagger_localhost_url)
-  - [Configuretion Class](#swagger_configuretion_class)
-
-
+  - [Configuretion(Java)](#swagger_configuretion_java)
+  - [Annotation example](#swagger_annotation_example)
+      - [Controller](#swagger_annotation_example_controller)
+      - [Model](#swagger_annotation_example_model)
 
 - [SpringBoot](#springBoot)
 - [Redis+Lua](#redisLua)
@@ -339,8 +340,8 @@ vagrant repository url:</br>
 - Localhost url</br>
 >http://localhost:8080/swagger-ui.html
 
-<a id="swagger_configuretion_class"></a>
-- Configuretion Class
+<a id="swagger_configuretion_java"></a>
+- Configuretion(Java)
 ```java
 package com.iosoft2020.MySwagger.config;
 
@@ -405,7 +406,84 @@ public class MySwaggerConfig {
 }
 ```
 
+<a id="swagger_annotation_example"></a>
+- Annotation example
 
+<a id="swagger_annotation_example_controller"></a>
+- Controller
+```java
+package com.iosoft2020.MySwagger.controller;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.iosoft2020.MySwagger.pojo.User;
+import com.iosoft2020.MySwagger.response.ErrorResponse;
+
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
+import io.swagger.annotations.ApiParam;
+import io.swagger.annotations.ApiResponse;
+import io.swagger.annotations.ApiResponses;
+
+@RestController
+@Api(tags = "Module One API")
+public class ModuleOneController {
+
+    @ApiOperation(value = "login", notes = "get username and password")
+    @GetMapping("login")
+    public String login(@ApiParam("user name") String username, @ApiParam("password") String password) {
+        return "welcome. ";
+    }
+
+    @ApiOperation(value = "findUser", notes = "find user")
+    @ApiResponses(value = {
+            @ApiResponse(code = 200, message = "user", response = User.class),
+            @ApiResponse(code = 400, message = "invalid parm", response = ErrorResponse.class)
+    })
+    @PostMapping("findUser")
+    public User findUser(String username) {
+        return new User();
+    }
+
+    @ApiOperation(value = "say hello", notes = "say hello by name")
+    @PostMapping("sayHello")
+    public String sayHello(@ApiParam("user name") String username) {
+        return "hello " + username;
+    }
+
+    @ApiOperation(value = "findUsers", notes = "find users")
+    @ApiResponse(code = 200, message = "find users", response = User.class, responseContainer = "List")
+    @PostMapping("findUsers")
+    public List<User> findUsers(String username) {
+        return new ArrayList<User>();
+    }
+
+}
+```
+
+<a id="swagger_annotation_example_model"></a>
+- Model
+```java
+package com.iosoft2020.MySwagger.pojo;
+
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+
+@ApiModel("user pojo")
+public class User {
+
+	@ApiModelProperty("user name")
+	public String username;
+
+	@ApiModelProperty("password")
+	public String password;
+}
+```
 
 
 </br>
