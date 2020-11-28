@@ -486,6 +486,7 @@ public class User {
 }
 ```
 
+<a id="swagger_ui_images"></a>
 - UI images</br>
 ![alt text](images/Swagger/swagger1.png)</br>
 ![alt text](images/Swagger/swagger2.png)</br>
