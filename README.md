@@ -341,67 +341,69 @@ vagrant repository url:</br>
 
 <a id="swagger_configuretion_class"></a>
 - Configuretion Class
->package com.iosoft2020.MySwagger.config;
+
+>`package com.iosoft2020.MySwagger.config;`
 >
->import java.util.ArrayList;
+>`import java.util.ArrayList;`
 >
->import org.springframework.context.annotation.Bean;
->import org.springframework.context.annotation.Configuration;
->import org.springframework.core.env.Environment;
->import org.springframework.core.env.Profiles;
+>`import org.springframework.context.annotation.Bean;`
+>`import org.springframework.context.annotation.Configuration;`
+>`import org.springframework.core.env.Environment;`
+>`import org.springframework.core.env.Profiles;`
 >
->import springfox.documentation.builders.PathSelectors;
->import springfox.documentation.builders.RequestHandlerSelectors;
->import springfox.documentation.service.ApiInfo;
->import springfox.documentation.service.Contact;
->import springfox.documentation.spi.DocumentationType;
->import springfox.documentation.spring.web.plugins.Docket;
->import springfox.documentation.swagger2.annotations.EnableSwagger2;
+>`import springfox.documentation.builders.PathSelectors;`
+>`import springfox.documentation.builders.RequestHandlerSelectors;`
+>`import springfox.documentation.service.ApiInfo;`
+>`import springfox.documentation.service.Contact;`
+>`import springfox.documentation.spi.DocumentationType;`
+>`import springfox.documentation.spring.web.plugins.Docket;`
+>`import springfox.documentation.swagger2.annotations.EnableSwagger2;`
 >
->@Configuration
->@EnableSwagger2
->public class MySwaggerConfig {
+>`@Configuration`
+>`@EnableSwagger2`
+>`public class MySwaggerConfig {`
 >
->    @Bean
->    public Docket docker(Environment environment) {
+>`    @Bean`
+>`    public Docket docker(Environment environment) {`
 >
->        Profiles profiles = Profiles.of("dev", "test");
->        environment.acceptsProfiles(profiles);
+>`        Profiles profiles = Profiles.of("dev", "test");`
+>`        environment.acceptsProfiles(profiles);`
 >
->        return new Docket(DocumentationType.SWAGGER_2).apiInfo(apiInfo())
->                //				.enable(environment.acceptsProfiles(profiles))
->                .groupName("group1")
->                .select()
->                // withMethodAnnotation
->                .apis(RequestHandlerSelectors.basePackage("com.iosoft2020.MySwagger.controller"))
->                //				.paths(PathSelectors.ant("/iosoft2020/**"))
->                .build();
->    }
+>`        return new Docket(DocumentationType.SWAGGER_2).apiInfo(apiInfo())`
+>`                //				.enable(environment.acceptsProfiles(profiles))`
+>`                .groupName("group1")`
+>`                .select()`
+>`                // withMethodAnnotation`
+>`                .apis(RequestHandlerSelectors.basePackage("com.iosoft2020.MySwagger.controller"))`
+>`                //				.paths(PathSelectors.ant("/iosoft2020/**"))`
+>`                .build();`
+>`    }`
 >
->    @Bean
->    public Docket dockerGroupA(Environment environment) {
+>`    @Bean`
+>`    public Docket dockerGroupA(Environment environment) {`
 >
->        return new Docket(DocumentationType.SWAGGER_2).apiInfo(apiInfo())
->                //				.enable(environment.acceptsProfiles(profiles))
->                .groupName("groupA")
->                .select()
->                // withMethodAnnotation
->                .apis(RequestHandlerSelectors.basePackage("com.iosoft2020.MySwagger.controller"))
->                .paths(PathSelectors.ant("/iosoft2020/**"))
->                .build();
->    }
+>`        return new Docket(DocumentationType.SWAGGER_2).apiInfo(apiInfo())`
+>`                //				.enable(environment.acceptsProfiles(profiles))`
+>`                .groupName("groupA")`
+>`                .select()`
+>`                // withMethodAnnotation`
+>`                .apis(RequestHandlerSelectors.basePackage("com.iosoft2020.MySwagger.controller"))`
+>`                .paths(PathSelectors.ant("/iosoft2020/**"))`
+>`                .build();`
+>`    }`
 >
->    private ApiInfo apiInfo() {
+>`    private ApiInfo apiInfo() {`
 >
->        Contact contack = new Contact("iosoft2020", "https://github.com/iosoft2020/BuildSystemZero2One",
->                "xxxx@xxxx.com");
+>`        Contact contack = new Contact("iosoft2020", "https://github.com/iosoft2020/BuildSystemZero2One",`
+>`                "liwei.duan@hotmail.com");`
 >
->        return new ApiInfo("MySwaggerAPI Document", "MySwaggerApi", "1.0",
->                "https://github.com/iosoft2020/BuildSystemZero2One/blob/main/README.md#swagger",
->                contack, "Apache 2.0", "http://www.apache.org/licenses/LICENSE-2.0",
->                new ArrayList<>());
->    }
->}
+>`        return new ApiInfo("MySwaggerAPI Document", "MySwaggerApi", "1.0",`
+>`                "https://github.com/iosoft2020/BuildSystemZero2One/blob/main/README.md#swagger",`
+>`                contack, "Apache 2.0", "http://www.apache.org/licenses/LICENSE-2.0",`
+>`                new ArrayList<>());`
+>`    }`
+>`}`
+
 
 
 </br>
