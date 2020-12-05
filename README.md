@@ -298,7 +298,7 @@ vagrant repository url:</br>
 
 <a id="lua"></a>
 ## Lua
-<a id="confirm_version_and_view_install_command"></a>
+<a id="lua_confirm_version_and_view_install_command"></a>
 - Confirm version and view install command</br>
 Url</br>
 >https://www.lua.org</br>
