@@ -25,8 +25,8 @@
   - [Start docker](#docker_start_docker)
   - [Confirm docker version](#docker_confirm_docker_version)
 - [Lua](#lua)
+  - [Confirm version and view install command](#lua_confirm_version_and_view_install_command)
   - [Install Gcc](#lua_install_gcc)
-  - [Download](#lua_download)
   - [Install](#lua_install)
 - [Nginx](#nginx)
 - [Openresty](#openresty)
@@ -298,27 +298,47 @@ vagrant repository url:</br>
 
 <a id="lua"></a>
 ## Lua
-<a id="lua_download"></a>
-- Download</br>
-Download url</br>
->https://www.lua.org
+<a id="confirm_version_and_view_install_command"></a>
+- Confirm version and view install command</br>
+Url</br>
+>https://www.lua.org</br>
 
-![alt text](/images/Lua/lua1.PNG?raw=true)
-![alt text](/images/Lua/lua2.PNG?raw=true)
+![alt text](/images/Lua/lua1.png?raw=true)
+![alt text](/images/Lua/lua2.png?raw=true)
 
-<a id="lua_install"></a>
+<a id="lua_install_gcc"></a>
 - Install Gcc</br>
-yum -y install gcc
+>yum -y install gcc</br>
+![alt text](/images/Lua/lua3.png?raw=true)
+![alt text](/images/Lua/lua4.png?raw=true)
 
 <a id="lua_install"></a>
 - Install</br>
 
-curl -R -O http://www.lua.org/ftp/lua-5.4.2.tar.gz
-tar zxf lua-5.4.2.tar.gz
-cd lua-5.4.2
-make all test
+>curl -R -O http://www.lua.org/ftp/lua-5.4.2.tar.gz</br>
 
-tar -zxvf lua-5.4.2.tar.gz
+![alt text](/images/Lua/lua5.png?raw=true)
+![alt text](/images/Lua/lua6.png?raw=true)
+
+>tar zxf lua-5.4.2.tar.gz</br>
+
+![alt text](/images/Lua/lua7.png?raw=true)
+![alt text](/images/Lua/lua8.png?raw=true)
+
+>cd lua-5.4.2</br>
+
+![alt text](/images/Lua/lua9.png?raw=true)
+![alt text](/images/Lua/lua10.png?raw=true)
+
+>make all test</br>
+
+![alt text](/images/Lua/lua11.png?raw=true)
+![alt text](/images/Lua/lua12.png?raw=true)
+
+>lua -v</br>
+
+![alt text](/images/Lua/lua13.png?raw=true)
+![alt text](/images/Lua/lua14.png?raw=true)
 
 <a id="nginx"></a>
 ## Nginx
