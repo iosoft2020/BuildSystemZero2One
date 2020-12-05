@@ -24,6 +24,10 @@
   - [Start docker when system start](#docker_start_docker_when_system_start)
   - [Start docker](#docker_start_docker)
   - [Confirm docker version](#docker_confirm_docker_version)
+- [Lua](#lua)
+  - [Install Gcc](#lua_install_gcc)
+  - [Download](#lua_download)
+  - [Install](#lua_install)
 - [Nginx](#nginx)
 - [Openresty](#openresty)
 - [Redis](#redis)
@@ -290,6 +294,30 @@ vagrant repository url:</br>
 
 </br>
 </br>
+
+<a id="lua"></a>
+## Lua
+<a id="lua_download"></a>
+- Download</br>
+Download url</br>
+>https://www.lua.org
+
+![alt text](/images/Lua/lua1.PNG?raw=true)
+![alt text](/images/Lua/lua2.PNG?raw=true)
+
+<a id="lua_install"></a>
+- Install Gcc</br>
+yum -y install gcc
+
+<a id="lua_install"></a>
+- Install</br>
+
+curl -R -O http://www.lua.org/ftp/lua-5.4.2.tar.gz
+tar zxf lua-5.4.2.tar.gz
+cd lua-5.4.2
+make all test
+
+tar -zxvf lua-5.4.2.tar.gz
 
 <a id="nginx"></a>
 ## Nginx
