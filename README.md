@@ -212,6 +212,7 @@ vagrant repository url:</br>
 
 ![alt text](images/Centos/centos31.png)</br>
 
+>su root</br>
 >df -hT</br>
 
 ![alt text](images/Centos/centos32.png)</br>
