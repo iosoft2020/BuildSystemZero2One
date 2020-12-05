@@ -349,37 +349,35 @@ Url</br>
 >mkdir -p /usr/local/nginx/www /usr/local/nginx/logs /usr/local/nginx/conf</br>
 
 ![alt text](/images/Nginx/nginx1.png?raw=true)
-![alt text](/images/Nginx/nginx2.png?raw=true)
 
 >docker pull nginx</br>
 
+![alt text](/images/Nginx/nginx2.png?raw=true)
 ![alt text](/images/Nginx/nginx3.png?raw=true)
-![alt text](/images/Nginx/nginx4.png?raw=true)
 
 >docker run -d -p 9001:80 --name mynginx nginx</br>
 
+![alt text](/images/Nginx/nginx4.png?raw=true)
 ![alt text](/images/Nginx/nginx5.png?raw=true)
-![alt text](/images/Nginx/nginx6.png?raw=true)
 
 >docker cp mynginx:/etc/nginx/nginx.conf /usr/local/nginx/conf/mynginx.conf</br>
+
+![alt text](/images/Nginx/nginx6.png?raw=true)
+
+>ll /usr/local/nginx/conf/mynginx.conf</br>
 
 ![alt text](/images/Nginx/nginx7.png?raw=true)
 ![alt text](/images/Nginx/nginx8.png?raw=true)
 
->ll /usr/local/nginx/conf/mynginx.conf</br>
+>docker stop mynginx</br>
 
 ![alt text](/images/Nginx/nginx9.png?raw=true)
 ![alt text](/images/Nginx/nginx10.png?raw=true)
 
->docker stop mynginx</br>
+>docker rm mynginx</br>
 
 ![alt text](/images/Nginx/nginx11.png?raw=true)
 ![alt text](/images/Nginx/nginx12.png?raw=true)
-
->docker rm mynginx</br>
-
-![alt text](/images/Nginx/nginx13.png?raw=true)
-![alt text](/images/Nginx/nginx14.png?raw=true)
 
 >docker run -p 9001:80 --name mynginx \</br>
 >-v /usr/local/nginx/www:/usr/share/nginx/html \</br>
@@ -387,12 +385,12 @@ Url</br>
 >-v /usr/local/nginx/conf/mynginx.conf:/etc/nginx/nginx.conf \</br>
 >-d nginx</br>
 
-![alt text](/images/Nginx/nginx15.png?raw=true)
-![alt text](/images/Nginx/nginx16.png?raw=true)
+![alt text](/images/Nginx/nginx13.png?raw=true)
+![alt text](/images/Nginx/nginx14.png?raw=true)
 
 >docker ps -a</br>
-![alt text](/images/Nginx/nginx17.png?raw=true)
-![alt text](/images/Nginx/nginx18.png?raw=true)
+![alt text](/images/Nginx/nginx15.png?raw=true)
+![alt text](/images/Nginx/nginx16.png?raw=true)
 
 </br>
 </br>
