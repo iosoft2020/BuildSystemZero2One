@@ -379,11 +379,11 @@ Url</br>
 ![alt text](/images/Nginx/nginx11.png?raw=true)
 ![alt text](/images/Nginx/nginx12.png?raw=true)
 
->docker run -p 9001:80 --name mynginx \</br>
->-v /usr/local/nginx/www:/usr/share/nginx/html \</br>
->-v /usr/local/nginx/logs:/var/log/nginx \</br>
->-v /usr/local/nginx/conf/mynginx.conf:/etc/nginx/nginx.conf \</br>
->-d nginx</br>
+> docker run -p 9001:80 --name mynginx \</br>
+> -v /usr/local/nginx/www:/usr/share/nginx/html \</br>
+> -v /usr/local/nginx/logs:/var/log/nginx \</br>
+> -v /usr/local/nginx/conf/mynginx.conf:/etc/nginx/nginx.conf \</br>
+> -d nginx</br>
 
 ![alt text](/images/Nginx/nginx13.png?raw=true)
 ![alt text](/images/Nginx/nginx14.png?raw=true)
