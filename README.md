@@ -31,7 +31,10 @@
   - [Confirm openresty started](#openresty_confirm_openresty_started)
   - [Embed lua code block](#openresty_embed_lua_code_block)
   - [Embed lua code file](#openresty_embed_lua_code_file)
-  
+      - [lua get get request parameters](#openresty_lua_get_get_request_parameters)
+      - [lua get post request parameters](#openresty_lua_get_post_request_parameters)
+      - [lua get request header parameters](#openresty_lua_get_request_header_parameters)
+      - [lua get body parameters](#openresty_lua_get_body_parameters)
 - [Lua](#lua)
   - [Confirm version and view install command](#lua_confirm_version_and_view_install_command)
   - [Install Gcc](#lua_install_gcc)
@@ -411,6 +414,46 @@ vagrant repository url:</br>
 ![alt text](images/Openresty/openresty29.png)</br>
 ![alt text](images/Openresty/openresty30.png)</br>
 ![alt text](images/Openresty/openresty31.png)</br>
+
+<a id="openresty_lua_get_get_request_parameters"></a>
+- lua get get request parameters
+
+> -- get uri parameters<br>
+> local arg = ngx.req.get_uri_args()<br>
+> for k,v in pairs(arg) do <br>
+>     ngx.say("[GET] key:",k," v:",v)<br>
+>     ngx.say("</br>")<br>
+> end<br>
+
+<a id="openresty_lua_get_post_request_parameters"></a>
+- lua get post request parameters
+
+> -- get post parameters<br>
+> ngx.req.read_body()<br>
+> local arg = ngx.req.get_post_args()<br>
+> for k,v in pairs(arg) do <br>
+>     ngx.say("[POST] key:",k," v:",v)<br>
+>     ngx.say("</br>")<br>
+> end<br>
+
+<a id="openresty_lua_get_request_header_parameters"></a>
+- lua get request header parameters
+>systemctl start openresty</br>
+
+> -- get head parameters<br>
+> local heads = ngx.req.get_headers()<br>
+> for k,v in pairs(heads) do <br>
+>     ngx.say("[HEADER] name:",k," v:",v)<br>
+>     ngx.say("</br>")<br>
+> end<br>
+
+<a id="openresty_lua_get_body_parameters"></a>
+- lua get body parameters
+
+> -- get body parameters<br>
+> ngx.req.read_body()<br>
+> local bodydata = ngx.req.get_body_data()<br>
+> ngx.say(bodydata)<br>
 
 <a id="lua"></a>
 ## Lua
