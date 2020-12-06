@@ -418,12 +418,14 @@ vagrant repository url:</br>
 <a id="openresty_lua_get_get_request_parameters"></a>
 - lua get get request parameters
 
-> -- get uri parameters<br>
-> local arg = ngx.req.get_uri_args()<br>
-> for k,v in pairs(arg) do <br>
->     ngx.say("[GET] key:",k," v:",v)<br>
->     ngx.say("</br>")<br>
-> end<br>
+```lua
+-- get uri parameters<br>
+local arg = ngx.req.get_uri_args()<br>
+for k,v in pairs(arg) do <br>
+    ngx.say("[GET] key:",k," v:",v)<br>
+    ngx.say("</br>")<br>
+end<br>
+```
 
 <a id="openresty_lua_get_post_request_parameters"></a>
 - lua get post request parameters
