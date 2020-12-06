@@ -350,9 +350,11 @@ vagrant repository url:</br>
 - Embed lua code block
 
 >cd /usr/local/openresty/nginx/conf/
+
 ![alt text](images/Openresty/openresty16.png)</br>
 
 >vi nginx.conf
+
 ![alt text](images/Openresty/openresty17.png)</br>
 
 
@@ -360,9 +362,11 @@ vagrant repository url:</br>
 > content_by_lua_block{
 >     ngx.say("hello world");
 > }
+
 ![alt text](images/Openresty/openresty18.png)</br>
 
 >systemctl restart openresty
+
 ![alt text](images/Openresty/openresty19.png)</br>
 ![alt text](images/Openresty/openresty20.png)</br>
 ![alt text](images/Openresty/openresty21.png)</br>
@@ -371,30 +375,38 @@ vagrant repository url:</br>
 - Embed lua code file
 
 > mkdir -p /usr/local/openresty/mylua
+
 ![alt text](images/Openresty/openresty22.png)</br>
 
 > cd /usr/local/openresty/mylua
+
 ![alt text](images/Openresty/openresty23.png)</br>
 
 > vi my.lua
+
 ![alt text](images/Openresty/openresty24.png)</br>
 
 > ngx.say("hello iosoft2020 by lua file");
+
 ![alt text](images/Openresty/openresty25.png)</br>
 
 > cd /usr/local/openresty/nginx/conf/
+
 ![alt text](images/Openresty/openresty26.png)</br>
 
 > vi nginx.conf
+
 ![alt text](images/Openresty/openresty27.png)</br>
 
 > #content_by_lua_block{
 > #  ngx.say("hello world");
 > #}          
 > content_by_lua_file /usr/local/openresty/mylua/my.lua;
+
 ![alt text](images/Openresty/openresty28.png)</br>
 
 >systemctl restart openresty
+
 ![alt text](images/Openresty/openresty29.png)</br>
 ![alt text](images/Openresty/openresty30.png)</br>
 ![alt text](images/Openresty/openresty31.png)</br>
