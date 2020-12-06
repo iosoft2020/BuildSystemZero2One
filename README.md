@@ -360,7 +360,7 @@ vagrant repository url:</br>
 
 > default_type text/html;</br>
 > content_by_lua_block{</br>
->     ngx.say("hello world");</br>
+>     ngx.say("hello iosoft2020");</br>
 > }</br>
 
 ![alt text](images/Openresty/openresty18.png)</br>
@@ -400,7 +400,7 @@ vagrant repository url:</br>
 
 
 > \#content_by_lua_block{</br>
-> \#ngx.say("hello world");</br>
+> \#ngx.say("hello iosoft2020");</br>
 > \#} </br>
 > content_by_lua_file /usr/local/openresty/mylua/my.lua;</br>
 
