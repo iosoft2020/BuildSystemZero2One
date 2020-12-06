@@ -24,7 +24,7 @@
   - [Start docker when system start](#docker_start_docker_when_system_start)
   - [Start docker](#docker_start_docker)
   - [Confirm docker version](#docker_confirm_docker_version)
-- [Openresty](#openresty)
+- [Openresty(nginx+lua)](#openresty)
   - [Install](#openresty_install)
   - [Start openresty when system start](#openresty_start_openresty_when_system_start)
   - [Start openresty](#openresty_start_openresty)
@@ -301,7 +301,7 @@ vagrant repository url:</br>
 </br>
 
 <a id="openresty"></a>
-## Openresty
+## Openresty(nginx+lua)
 <a id="openresty_install"></a>
 - Install</br>
 >yum install yum-utils
