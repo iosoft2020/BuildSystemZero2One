@@ -24,7 +24,7 @@
   - [Start docker when system start](#docker_start_docker_when_system_start)
   - [Start docker](#docker_start_docker)
   - [Confirm docker version](#docker_confirm_docker_version)
-- [Openresty(nginx+lua)](#openresty)
+- [Openresty(Nginx+Lua)](#openresty)
   - [Install](#openresty_install)
   - [Start openresty when system start](#openresty_start_openresty_when_system_start)
   - [Start openresty](#openresty_start_openresty)
