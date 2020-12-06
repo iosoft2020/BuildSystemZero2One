@@ -29,6 +29,9 @@
   - [Start openresty when system start](#openresty_start_openresty_when_system_start)
   - [Start openresty](#openresty_start_openresty)
   - [Confirm openresty started](#openresty_confirm_openresty_started)
+  - [lua code block](#openresty_confirm_openresty_started)
+  - [lua code by file](#openresty_confirm_openresty_started)
+  
 - [Lua](#lua)
   - [Confirm version and view install command](#lua_confirm_version_and_view_install_command)
   - [Install Gcc](#lua_install_gcc)
