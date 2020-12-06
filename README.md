@@ -398,10 +398,12 @@ vagrant repository url:</br>
 
 ![alt text](images/Openresty/openresty27.png)</br>
 
-> #content_by_lua_block{
-> #  ngx.say("hello world");
-> #}          
-> content_by_lua_file /usr/local/openresty/mylua/my.lua;
+<p>
+  content_by_lua_block{
+  ngx.say("hello world");
+}          
+content_by_lua_file /usr/local/openresty/mylua/my.lua;
+</p>
 
 ![alt text](images/Openresty/openresty28.png)</br>
 
