@@ -419,43 +419,48 @@ vagrant repository url:</br>
 - lua get get request parameters
 
 ```lua
--- get uri parameters<br>
-local arg = ngx.req.get_uri_args()<br>
-for k,v in pairs(arg) do <br>
-    ngx.say("[GET] key:",k," v:",v)<br>
-    ngx.say("</br>")<br>
-end<br>
+-- get uri parameters
+local arg = ngx.req.get_uri_args()
+for k,v in pairs(arg) do 
+    ngx.say("[GET] key:",k," v:",v)
+    ngx.say("</br>")
+end
 ```
 
 <a id="openresty_lua_get_post_request_parameters"></a>
 - lua get post request parameters
 
-> -- get post parameters<br>
-> ngx.req.read_body()<br>
-> local arg = ngx.req.get_post_args()<br>
-> for k,v in pairs(arg) do <br>
->     ngx.say("[POST] key:",k," v:",v)<br>
->     ngx.say("</br>")<br>
-> end<br>
+```lua
+-- get post parameters
+ngx.req.read_body()
+local arg = ngx.req.get_post_args()
+for k,v in pairs(arg) do 
+    ngx.say("[POST] key:",k," v:",v)
+    ngx.say("</br>")
+end
+```
 
 <a id="openresty_lua_get_request_header_parameters"></a>
 - lua get request header parameters
->systemctl start openresty</br>
 
-> -- get head parameters<br>
-> local heads = ngx.req.get_headers()<br>
-> for k,v in pairs(heads) do <br>
->     ngx.say("[HEADER] name:",k," v:",v)<br>
->     ngx.say("</br>")<br>
-> end<br>
+```lua
+-- get head parameters
+local heads = ngx.req.get_headers()
+for k,v in pairs(heads) do 
+    ngx.say("[HEADER] name:",k," v:",v)
+    ngx.say("</br>")
+end
+```
 
 <a id="openresty_lua_get_body_parameters"></a>
 - lua get body parameters
 
-> -- get body parameters<br>
-> ngx.req.read_body()<br>
-> local bodydata = ngx.req.get_body_data()<br>
-> ngx.say(bodydata)<br>
+```lua
+-- get body parameters
+ngx.req.read_body()
+local bodydata = ngx.req.get_body_data()
+ngx.say(bodydata)
+```
 
 <a id="lua"></a>
 ## Lua
