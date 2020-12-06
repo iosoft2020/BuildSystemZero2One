@@ -34,7 +34,6 @@
   - [Install](#lua_install)
 - [Nginx](#nginx)
   - [Install by docker](#nginx_install_by_docker)
-- [Openresty](#openresty)
 - [Redis](#redis)
 - [Mysql](#mysql)
 - [GitLab](#gitLab)
