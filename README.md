@@ -28,6 +28,7 @@
   - [Install](#openresty_install)
   - [Start openresty when system start](#openresty_start_openresty_when_system_start)
   - [Start openresty](#openresty_start_openresty)
+  - [Confirm openresty started](#openresty_confirm_openresty_started)
 - [Lua](#lua)
   - [Confirm version and view install command](#lua_confirm_version_and_view_install_command)
   - [Install Gcc](#lua_install_gcc)
@@ -308,31 +309,39 @@ vagrant repository url:</br>
 
 ![alt text](images/Openresty/openresty1.png)</br>
 ![alt text](images/Openresty/openresty2.png)</br>
-
->yum-config-manager --add-repo https://openresty.org/package/centos/openresty.repo
-
 ![alt text](images/Openresty/openresty3.png)</br>
 ![alt text](images/Openresty/openresty4.png)</br>
 
->yum install openresy openresty-resty openresty-opm openresy-doc
+>yum-config-manager --add-repo https://openresty.org/package/centos/openresty.repo
 
 ![alt text](images/Openresty/openresty5.png)</br>
 ![alt text](images/Openresty/openresty6.png)</br>
+
+>yum install openresy openresty-resty openresty-opm openresy-doc
+
+![alt text](images/Openresty/openresty7.png)</br>
+![alt text](images/Openresty/openresty8.png)</br>
+![alt text](images/Openresty/openresty9.png)</br>
+![alt text](images/Openresty/openresty10.png)</br>
 
 <a id="openresty_start_openresty_when_system_start"></a>
 - Start openresty when system start
 >systemctl enable openresty</br>
 
-![alt text](images/Openresty/openresty7.png)</br>
-![alt text](images/Openresty/openresty8.png)</br>
+![alt text](images/Openresty/openresty11.png)</br>
+![alt text](images/Openresty/openresty12.png)</br>
 
 <a id="openresty_start_openresty"></a>
 - Start openresty
 >systemctl start openresty</br>
 
-![alt text](images/Openresty/openresty9.png)</br>
+![alt text](images/Openresty/openresty13.png)</br>
+![alt text](images/Openresty/openresty14.png)</br>
 
+<a id="openresty_confirm_openresty_started"></a>
+- Confirm openresty started
 
+![alt text](images/Openresty/openresty15.png)</br>
 
 <a id="lua"></a>
 ## Lua
