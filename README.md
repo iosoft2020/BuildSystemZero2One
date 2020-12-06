@@ -444,12 +444,7 @@ Url</br>
 </br>
 </br>
 
-<a id="openresty"></a>
-## Openresty
-</br>
-</br>
 <a id="redis"></a>
-
 ## Redis
 </br>
 </br>
