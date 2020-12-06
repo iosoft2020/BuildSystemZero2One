@@ -24,6 +24,10 @@
   - [Start docker when system start](#docker_start_docker_when_system_start)
   - [Start docker](#docker_start_docker)
   - [Confirm docker version](#docker_confirm_docker_version)
+- [Openresty](#openresty)
+  - [Install](#openresty_install)
+  - [Start openresty when system start](#openresty_start_openresty_when_system_start)
+  - [Start openresty](#openresty_start_openresty)
 - [Lua](#lua)
   - [Confirm version and view install command](#lua_confirm_version_and_view_install_command)
   - [Install Gcc](#lua_install_gcc)
@@ -296,6 +300,40 @@ vagrant repository url:</br>
 
 </br>
 </br>
+
+<a id="openresty"></a>
+## Openresty
+<a id="openresty_install"></a>
+- Install</br>
+>yum install yum-utils
+
+![alt text](images/Openresty/openresty1.png)</br>
+![alt text](images/Openresty/openresty2.png)</br>
+
+>yum-config-manager --add-repo https://openresty.org/package/centos/openresty.repo
+
+![alt text](images/Openresty/openresty3.png)</br>
+![alt text](images/Openresty/openresty4.png)</br>
+
+>yum install openresy openresty-resty openresty-opm openresy-doc
+
+![alt text](images/Openresty/openresty5.png)</br>
+![alt text](images/Openresty/openresty6.png)</br>
+
+<a id="openresty_start_openresty_when_system_start"></a>
+- Start openresty when system start
+>systemctl enable openresty</br>
+
+![alt text](images/Openresty/openresty7.png)</br>
+![alt text](images/Openresty/openresty8.png)</br>
+
+<a id="openresty_start_openresty"></a>
+- Start openresty
+>systemctl start openresty</br>
+
+![alt text](images/Openresty/openresty9.png)</br>
+
+
 
 <a id="lua"></a>
 ## Lua
