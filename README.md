@@ -43,6 +43,10 @@
   - [Install by docker](#nginx_install_by_docker)
 - [Redis](#redis)
 - [Mysql](#mysql)
+  - [Install by docker](#mysql_install_by_docker)
+  - [Confirm install status](#mysql_confirm_install_status)
+  - [Run Mysql](#mysql_run_mysql)
+  - [Confirm run status](#mysql_confirm_run_status)
 - [GitLab](#gitLab)
 - [Jenkins](#jenkins)
 - [Swagger](#swagger)
@@ -564,9 +568,29 @@ Url</br>
 ## Redis
 </br>
 </br>
-<a id="mysql"></a>
+<a id="redis"></a>
 
 ## Mysql
+<a id="mysql_install_by_docker"></a>
+- Install by docker</br>
+> docker pull mysql:5.7
+
+<a id="mysql_confirm_install_status"></a>
+- Confirm install status</br>
+> docker images
+
+<a id="mysql_run_mysql"></a>
+- Run Mysql
+> docker run -p 3306:3306 --name mysql \
+> -v /mydata/mysql/log:/var/log/mysql \
+> -v /mydata/mysql/data:/var/lib/mysql \
+> -v /mydata/mysql/conf:/etc/mysql \
+> -e MYSQL_ROOT_PASSWORD=root \
+> -d mysql:5.7
+
+<a id="mysql_confirm_run_status"></a>
+- Confirm run status</br>
+> docker ps
 </br>
 </br>
 
