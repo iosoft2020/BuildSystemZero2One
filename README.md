@@ -624,21 +624,22 @@ Url</br>
 
 <a id="mysql_edit_config_file"></a>
 - Edit config file</br>
-> [client]
+> [client]</br>
 > default-character-set=utf8
 >  
-> [mysql]
+> [mysql]</br>
 > default-character-set=utf8
 > 
-> [mysqld]
-> init_connect='SET collation_connection = utf8_unicode_ci'
-> init_connect='SET NAMES utf8'
-> character-set-server=utf8
-> collation-server=utf8_unicode_ci
-> skip-character-set-client-handshake
+> [mysqld]</br>
+> init_connect='SET collation_connection = utf8_unicode_ci'</br>
+> init_connect='SET NAMES utf8'</br>
+> character-set-server=utf8</br>
+> collation-server=utf8_unicode_ci</br>
+> skip-character-set-client-handshake</br>
 > skip-name-resolve
 
 <a id="mysql_restart_mysql"></a>
+- Restart mysql</br>
 > docker restart mysql
 </br>
 </br>
