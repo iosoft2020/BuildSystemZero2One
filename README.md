@@ -44,6 +44,7 @@
 - [Redis](#redis)
   - [Install by docker](#redis_install_by_docker)
   - [Confirm install status](#redis_confirm_install_status)
+  - [Create config file](#redis_create_config_file)
   - [Run Redis](#redis_run_redis)
   - [Confirm run status](#redis_confirm_run_status)
 - [Mysql](#mysql)
@@ -579,6 +580,11 @@ Url</br>
 <a id="redis_confirm_install_status"></a>
 - Confirm install status</br>
 > docker images
+
+<a id="redis_create_config_file"></a>
+- Create config file</br>
+> mkdir -p /mydata/redis/conf
+> touch /mydata/redis/conf/redis.conf
 
 <a id="redis_run_redis"></a>
 - Run Redis
