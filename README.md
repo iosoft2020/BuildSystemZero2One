@@ -42,11 +42,17 @@
 - [Nginx](#nginx)
   - [Install by docker](#nginx_install_by_docker)
 - [Redis](#redis)
+  - [Install by docker](#redis_install_by_docker)
+  - [Confirm install status](#redis_confirm_install_status)
+  - [Run Redis](#redis_run_redis)
+  - [Confirm run status](#redis_confirm_run_status)
 - [Mysql](#mysql)
   - [Install by docker](#mysql_install_by_docker)
   - [Confirm install status](#mysql_confirm_install_status)
   - [Run Mysql](#mysql_run_mysql)
   - [Confirm run status](#mysql_confirm_run_status)
+  - [Edit config file](#mysql_edit_config_file)
+  - [Restart mysql](#mysql_restart_mysql)
 - [GitLab](#gitLab)
 - [Jenkins](#jenkins)
 - [Swagger](#swagger)
@@ -566,6 +572,24 @@ Url</br>
 
 <a id="redis"></a>
 ## Redis
+<a id="redis_install_by_docker"></a>
+- Install by docker</br>
+> docker pull redis
+
+<a id="redis_confirm_install_status"></a>
+- Confirm install status</br>
+> docker images
+
+<a id="redis_run_redis"></a>
+- Run Redis
+> docker run -p 6379:6379 --name myredis \
+> -v /mydata/redis/data:/data \
+> -v /mydata/redis/conf/redis.conf:/etc/redis/redis.conf \
+> -d redis redis-server /etc/redis/redis.conf
+
+<a id="redis_confirm_run_status"></a>
+- Confirm run status</br>
+> docker ps
 </br>
 </br>
 <a id="redis"></a>
@@ -591,6 +615,25 @@ Url</br>
 <a id="mysql_confirm_run_status"></a>
 - Confirm run status</br>
 > docker ps
+
+<a id="mysql_edit_config_file"></a>
+- Edit config file</br>
+> [client]
+> default-character-set=utf8
+>  
+> [mysql]
+> default-character-set=utf8
+> 
+> [mysqld]
+> init_connect='SET collation_connection = utf8_unicode_ci'
+> init_connect='SET NAMES utf8'
+> character-set-server=utf8
+> collation-server=utf8_unicode_ci
+> skip-character-set-client-handshake
+> skip-name-resolve
+
+<a id="mysql_restart_mysql"></a>
+> docker restart mysql
 </br>
 </br>
 
