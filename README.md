@@ -583,7 +583,7 @@ Url</br>
 
 <a id="redis_create_config_file"></a>
 - Create config file</br>
-> mkdir -p /mydata/redis/conf
+> mkdir -p /mydata/redis/conf</br>
 > touch /mydata/redis/conf/redis.conf
 
 <a id="redis_run_redis"></a>
