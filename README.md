@@ -588,9 +588,9 @@ Url</br>
 
 <a id="redis_run_redis"></a>
 - Run Redis
-> docker run -p 6379:6379 --name myredis \
-> -v /mydata/redis/data:/data \
-> -v /mydata/redis/conf/redis.conf:/etc/redis/redis.conf \
+> docker run -p 6379:6379 --name myredis \</br>
+> -v /mydata/redis/data:/data \</br>
+> -v /mydata/redis/conf/redis.conf:/etc/redis/redis.conf \</br>
 > -d redis redis-server /etc/redis/redis.conf
 
 <a id="redis_confirm_run_status"></a>
