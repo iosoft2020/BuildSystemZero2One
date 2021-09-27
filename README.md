@@ -47,12 +47,14 @@
   - [Create config file](#redis_create_config_file)
   - [Run Redis](#redis_run_redis)
   - [Confirm run status](#redis_confirm_run_status)
+  - [Start redis when system start](#redis_start_redis_when_system_start)
 - [Mysql](#mysql)
   - [Install by docker](#mysql_install_by_docker)
   - [Confirm install status](#mysql_confirm_install_status)
   - [Run Mysql](#mysql_run_mysql)
   - [Confirm run status](#mysql_confirm_run_status)
   - [Edit config file](#mysql_edit_config_file)
+  - [Start mysql when system start](#mysql_start_mysql_when_system_start)
   - [Restart mysql](#mysql_restart_mysql)
 - [GitLab](#gitLab)
 - [Jenkins](#jenkins)
@@ -596,6 +598,11 @@ Url</br>
 <a id="redis_confirm_run_status"></a>
 - Confirm run status</br>
 > docker ps
+
+<a id="redis_start_redis_when_system_start"></a>
+- Start redis when system start</br>
+> docker update myredis --restart=always
+
 </br>
 </br>
 <a id="redis"></a>
@@ -637,6 +644,10 @@ Url</br>
 > collation-server=utf8_unicode_ci</br>
 > skip-character-set-client-handshake</br>
 > skip-name-resolve
+
+<a id="mysql_start_mysql_when_system_start"></a>
+- Start mysql when system start</br>
+> docker update mysql --restart=always
 
 <a id="mysql_restart_mysql"></a>
 - Restart mysql</br>
