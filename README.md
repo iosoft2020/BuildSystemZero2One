@@ -681,6 +681,48 @@ Url</br>
 > docker update elasticsearch --restart=always
 > 192.168.56.66:9200/
 
+- Command</br>
+> 192.168.56.66:9200/_cat/nodes
+> 192.168.56.66:9200/_cat/health
+> 192.168.56.66:9200/_cat/master
+> 192.168.56.66:9200/_cat/indices
+
+PUT 192.168.56.66:9200/customer/external/1
+{
+  "name":"iosoft"
+}
+POST 192.168.56.66:9200/customer/external
+GET 192.168.56.66:9200/customer/external/1
+{
+"_index": "customer",
+"_type": "external",
+"_id": "1",
+"_version": 2,
+"_seq_no": 1,
+"_primary_term": 1,
+"found": true,
+"_source": {
+"name": "iosoft"
+}
+}
+POST 192.168.56.66:9200/customer/external/1?if_seq_no=0&if_primary_term=1
+
+POST 192.168.56.66:9200/customer/external/1/_update
+{
+  "doc":{
+    "name":"iosoft11"
+  }
+}
+
+DELETE 192.168.56.66:9200/customer/external/1
+DELETE 192.168.56.66:9200/customer
+
+POST 192.168.56.66:9200/customer/external/_bulk
+{"index":"_id":"1"}
+{"name":"iosoft2020"}
+{"index":"_id":"2"}
+{"name":"iosoft2021"}
+
 <a id="kibana"></a>
 ## Kibana
 <a id="kibana_install_by_docker"></a>
