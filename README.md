@@ -660,19 +660,19 @@ Url</br>
 ## Elasticsearch
 <a id="elasticsearch_install_by_docker"></a>
 - Install by docker</br>
-> docker pull elasticsearch:7.12.0
-> docker pull kibana:7.12.0
-> free -m
-> mkdir -p /mydata/elasticsearch/config
-> mkdir -p /mydata/elasticsearch/data
-> echo "http.host: 0.0.0.0">>/mydata/elasticsearch/config/elasticsearch.yml
-> docker run --name elasticsearch -p 9200:9200 \\
->  -p 9300:9300 \\
->  -e "discovery.type=single-node" \\
->  -e ES_JAVA_OPTS="-Xms64m -Xmx512m" \\
->   -v /mydata/elasticsearch/config/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml \\
->  -v /mydata/elasticsearch/data:/usr/share/elasticsearch/data \\
->  -v /mydata/elasticsearch/plugins:/usr/share/elasticsearch/plugins \\
+> docker pull elasticsearch:7.12.0</br>
+> docker pull kibana:7.12.0</br>
+> free -m</br>
+> mkdir -p /mydata/elasticsearch/config</br>
+> mkdir -p /mydata/elasticsearch/data</br>
+> echo "http.host: 0.0.0.0">>/mydata/elasticsearch/config/elasticsearch.yml</br>
+> docker run --name elasticsearch -p 9200:9200 \\</br>
+>  -p 9300:9300 \\</br>
+>  -e "discovery.type=single-node" \\</br>
+>  -e ES_JAVA_OPTS="-Xms64m -Xmx512m" \\</br>
+>   -v /mydata/elasticsearch/config/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml \\</br>
+>  -v /mydata/elasticsearch/data:/usr/share/elasticsearch/data \\</br>
+>  -v /mydata/elasticsearch/plugins:/usr/share/elasticsearch/plugins \\</br>
 >  -d elasticsearch:7.12.0
 
 <a id="gitLab"></a>
