@@ -679,13 +679,15 @@ Url</br>
 >  -v /mydata/elasticsearch/plugins:/usr/share/elasticsearch/plugins \\</br>
 >  -d elasticsearch:7.12.0
 > docker update elasticsearch --restart=always
+> 192.168.56.66:9200/
 
 <a id="kibana"></a>
 ## Kibana
 <a id="kibana_install_by_docker"></a>
 - Install by docker</br>
-> docker run --name kibana -e ELASTICSEARCH_HOSTS=http://192.168.56.100:9200 -p 5601:5601 \\</br>
+> docker run --name kibana -e ELASTICSEARCH_HOSTS=http://192.168.56.66:9200 -p 5601:5601 \\</br>
 > -d kibana:7.12.1</br>
+> 192.168.56.66:5601/
 
 <a id="gitLab"></a>
 ## GitLab
