@@ -666,6 +666,7 @@ Url</br>
 > mkdir -p /mydata/elasticsearch/config</br>
 > mkdir -p /mydata/elasticsearch/data</br>
 > echo "http.host: 0.0.0.0">>/mydata/elasticsearch/config/elasticsearch.yml</br>
+> chmod -R 777 /mydata/elasticsearch/
 > docker run --name elasticsearch -p 9200:9200 \\</br>
 >  -p 9300:9300 \\</br>
 >  -e "discovery.type=single-node" \\</br>
