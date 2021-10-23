@@ -56,6 +56,7 @@
   - [Edit config file](#mysql_edit_config_file)
   - [Start mysql when system start](#mysql_start_mysql_when_system_start)
   - [Restart mysql](#mysql_restart_mysql)
+- [Elasticsearch](#elasticsearch)
 - [GitLab](#gitLab)
 - [Jenkins](#jenkins)
 - [Swagger](#swagger)
@@ -654,6 +655,25 @@ Url</br>
 > docker restart mysql
 </br>
 </br>
+
+<a id="elasticsearch"></a>
+## Elasticsearch
+<a id="elasticsearch_install_by_docker"></a>
+- Install by docker</br>
+> docker pull elasticsearch:7.12.0
+> docker pull kibana:7.12.0
+> free -m
+> mkdir -p /mydata/elasticsearch/config
+> mkdir -p /mydata/elasticsearch/data
+> echo "http.host: 0.0.0.0">>/mydata/elasticsearch/config/elasticsearch.yml
+> docker run --name elasticsearch -p 9200:9200 \\
+>  -p 9300:9300 \\
+>  -e "discovery.type=single-node" \\
+>  -e ES_JAVA_OPTS="-Xms64m -Xmx512m" \\
+>   -v /mydata/elasticsearch/config/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml \\
+>  -v /mydata/elasticsearch/data:/usr/share/elasticsearch/data \\
+>  -v /mydata/elasticsearch/plugins:/usr/share/elasticsearch/plugins \\
+>  -d elasticsearch:7.12.0
 
 <a id="gitLab"></a>
 ## GitLab
