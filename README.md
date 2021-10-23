@@ -684,22 +684,8 @@ Url</br>
 ## Kibana
 <a id="kibana_install_by_docker"></a>
 - Install by docker</br>
-> docker pull elasticsearch:7.12.0</br>
-> docker pull kibana:7.12.0</br>
-> free -m</br>
-> mkdir -p /mydata/elasticsearch/config</br>
-> mkdir -p /mydata/elasticsearch/data</br>
-> echo "http.host: 0.0.0.0">>/mydata/elasticsearch/config/elasticsearch.yml</br>
-> chmod -R 777 /mydata/elasticsearch/
-> docker run --name elasticsearch -p 9200:9200 \\</br>
->  -p 9300:9300 \\</br>
->  -e "discovery.type=single-node" \\</br>
->  -e ES_JAVA_OPTS="-Xms64m -Xmx512m" \\</br>
->   -v /mydata/elasticsearch/config/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml \\</br>
->  -v /mydata/elasticsearch/data:/usr/share/elasticsearch/data \\</br>
->  -v /mydata/elasticsearch/plugins:/usr/share/elasticsearch/plugins \\</br>
->  -d elasticsearch:7.12.0
-> docker update elasticsearch --restart=always
+> docker run --name kibana -e ELASTICSEARCH_HOSTS=http://192.168.56.100:9200 -p 5601:5601 \\</br>
+> -d kibana:7.12.1</br>
 
 <a id="gitLab"></a>
 ## GitLab
