@@ -558,10 +558,10 @@ Url</br>
 ![alt text](/images/Nginx/nginx11.png?raw=true)
 ![alt text](/images/Nginx/nginx12.png?raw=true)
 
-> docker run -p 9001:80 --name mynginx \</br>
-> -v /usr/local/nginx/www:/usr/share/nginx/html \</br>
-> -v /usr/local/nginx/logs:/var/log/nginx \</br>
-> -v /usr/local/nginx/conf/mynginx.conf:/etc/nginx/nginx.conf \</br>
+> docker run -p 9001:80 --name mynginx \\</br>
+> -v /usr/local/nginx/www:/usr/share/nginx/html \\</br>
+> -v /usr/local/nginx/logs:/var/log/nginx \\</br>
+> -v /usr/local/nginx/conf/mynginx.conf:/etc/nginx/nginx.conf \\</br>
 > -d nginx</br>
 
 ![alt text](/images/Nginx/nginx13.png?raw=true)
@@ -591,9 +591,9 @@ Url</br>
 
 <a id="redis_run_redis"></a>
 - Run Redis
-> docker run -p 6379:6379 --name myredis \ </br>
-> -v /mydata/redis/data:/data \ </br>
-> -v /mydata/redis/conf/redis.conf:/etc/redis/redis.conf \ </br>
+> docker run -p 6379:6379 --name myredis \\ </br>
+> -v /mydata/redis/data:/data \\ </br>
+> -v /mydata/redis/conf/redis.conf:/etc/redis/redis.conf \\ </br>
 > -d redis redis-server /etc/redis/redis.conf
 
 <a id="redis_confirm_run_status"></a>
@@ -619,11 +619,11 @@ Url</br>
 
 <a id="mysql_run_mysql"></a>
 - Run Mysql
-> docker run -p 3306:3306 --name mysql \
-> -v /mydata/mysql/log:/var/log/mysql \
-> -v /mydata/mysql/data:/var/lib/mysql \
-> -v /mydata/mysql/conf:/etc/mysql \
-> -e MYSQL_ROOT_PASSWORD=root \
+> docker run -p 3306:3306 --name mysql \\</br>
+> -v /mydata/mysql/log:/var/log/mysql \\</br>
+> -v /mydata/mysql/data:/var/lib/mysql \\</br>
+> -v /mydata/mysql/conf:/etc/mysql \\</br>
+> -e MYSQL_ROOT_PASSWORD=root \\</br>
 > -d mysql:5.7
 
 <a id="mysql_confirm_run_status"></a>
@@ -674,6 +674,7 @@ Url</br>
 >  -v /mydata/elasticsearch/data:/usr/share/elasticsearch/data \\</br>
 >  -v /mydata/elasticsearch/plugins:/usr/share/elasticsearch/plugins \\</br>
 >  -d elasticsearch:7.12.0
+> docker update elasticsearch --restart=always
 
 <a id="gitLab"></a>
 ## GitLab
