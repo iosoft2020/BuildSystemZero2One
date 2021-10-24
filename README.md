@@ -717,11 +717,6 @@ POST 192.168.56.66:9200/customer/external/1/_update
 DELETE 192.168.56.66:9200/customer/external/1
 DELETE 192.168.56.66:9200/customer
 
-POST 192.168.56.66:9200/customer/external/_bulk
-{"index":"_id":"1"}
-{"name":"iosoft2020"}
-{"index":"_id":"2"}
-{"name":"iosoft2021"}
 
 <a id="kibana"></a>
 ## Kibana
@@ -730,6 +725,80 @@ POST 192.168.56.66:9200/customer/external/_bulk
 > docker run --name kibana -e ELASTICSEARCH_HOSTS=http://192.168.56.66:9200 -p 5601:5601 \\</br>
 > -d kibana:7.12.1</br>
 > 192.168.56.66:5601/
+
+POST /customer/external/_bulk
+{"index":"_id":"1"}
+{"name":"iosoft2020"}
+{"index":"_id":"2"}
+{"name":"iosoft2021"}
+
+GET /customer/external/_search
+{
+    "query": {
+        "match_all": {}
+    },
+    "sort":[
+        {
+	    "account_number": "asc"
+	},
+	{
+	    "balance": "desc"
+	}
+    ],
+    "from": 5,
+    "size": 5
+    "_source": ["balance","firstname"]
+}
+
+GET /customer/external/_search
+{
+    "query": {
+        "macth": {
+	    "account_number": 20
+	}
+    }
+}
+
+GET /customer/external/_search
+{
+    "query": {
+        "macth_phrase": {
+	    "address": "mill lane"
+	}
+    }
+}
+
+
+GET /customer/external/_search
+{
+    "query": {
+        "multi_macth": {
+	    "query": "mill",
+	    "fields": ["address", "city"]
+	}
+    }
+}
+
+GET /customer/external/_search
+{
+    "query": {
+        "bool": {
+	    "must": [
+	        {
+		    "match":{
+		        "gender": "F"
+		    }
+		},
+	        {
+		    "match":{
+		        "address": "mill"
+		    }
+		},
+		
+	    ]
+	}
+    }
+}
 
 <a id="gitLab"></a>
 ## GitLab
