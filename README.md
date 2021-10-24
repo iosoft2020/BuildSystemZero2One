@@ -686,7 +686,7 @@ Url</br>
 > 192.168.56.66:9200/_cat/health
 > 192.168.56.66:9200/_cat/master
 > 192.168.56.66:9200/_cat/indices
-
+```
 PUT 192.168.56.66:9200/customer/external/1
 {
   "name":"iosoft"
@@ -713,7 +713,7 @@ POST 192.168.56.66:9200/customer/external/1/_update
     "name":"iosoft11"
   }
 }
-
+```
 DELETE 192.168.56.66:9200/customer/external/1
 DELETE 192.168.56.66:9200/customer
 
@@ -725,7 +725,7 @@ DELETE 192.168.56.66:9200/customer
 > docker run --name kibana -e ELASTICSEARCH_HOSTS=http://192.168.56.66:9200 -p 5601:5601 \\</br>
 > -d kibana:7.12.1</br>
 > 192.168.56.66:5601/
-
+```
 POST /customer/external/_bulk
 {"index":"_id":"1"}
 {"name":"iosoft2020"}
@@ -795,11 +795,27 @@ GET /customer/external/_search
 		    }
 		},
 		
+	    ],
+	    "must_not": [
+	        {
+		    "match":{
+		        "age": "38"
+		    }
+		}
+		
+	    ],
+	    "should": [
+	        {
+		    "match":{
+		        "last_name": "Wallace"
+		    }
+		}
+		
 	    ]
 	}
     }
 }
-
+```
 <a id="gitLab"></a>
 ## GitLab
 </br>
