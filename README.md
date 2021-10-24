@@ -810,9 +810,132 @@ GET /customer/external/_search
 		        "last_name": "Wallace"
 		    }
 		}
-		
+	    ],
+	    "filter":{
+		"age": {
+		     "gte": 18,
+		     "lte": 30,
+		}
+	    }
+	}
+    }
+}
+
+
+GET /customer/external/_search
+{
+    "query": {
+        "bool": {
+	    "must": [
+	        {
+		    "range":{
+		        "age": {
+			     "gte": 18,
+			     "lte": 30,
+			}
+		    }
+		}
 	    ]
 	}
+    }
+}
+
+
+GET /customer/external/_search
+{
+    "query": {
+        "bool": {
+	    "must": [
+	        {
+		    "filter":{
+		        "age": {
+			     "gte": 18,
+			     "lte": 30,
+			}
+		    }
+		}
+	    ]
+	}
+    }
+}
+
+GET /customer/external/_search
+{
+    "query": {
+        "term": {
+	    "age": 20
+	}
+    }
+}
+
+GET /customer/external/_search
+{
+    "query": {
+        "match": {
+	    "address.keyword": "789 Madison Street"
+	}
+    }
+}
+
+GET /customer/external/_search
+{
+    "query": {
+        "match": {
+	    "address": "mill"
+	}
+    },
+    "aggs":{
+        "ageAgg": {
+	    "terms": {
+	        "field": "age",
+		"size": 10
+	    }
+	},
+        "avgAgg": {
+	    "terms": {
+	        "field": "age",
+		"size": 10
+	    }
+	},
+        "balanceAgg": {
+	    "terms": {
+	        "field": "age",
+		"size": 10
+	    }
+	}
+    }
+}
+
+PUT /my_index
+{
+    "mapping": {
+        "properties": {
+	    "age": {"type":"integer"},
+	    "email": {"type":"keyword"},
+	    "name": {"type":"text"}
+	}
+    }
+}
+
+PUT /my_index/_mapping
+{
+    "properties": {
+	"id": {
+	    "type":"keyword",
+	    "index":"true"
+	}
+    }
+}
+
+GET /my_index/_mapping
+
+POST _reindex{
+    "source": {
+        "index": "old_index",
+	"type": "account"
+    },
+    "dest": {
+        "index": "new_index"
     }
 }
 ```
