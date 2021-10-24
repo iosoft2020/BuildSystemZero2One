@@ -938,6 +938,17 @@ POST _reindex{
         "index": "new_index"
     }
 }
+
+
+cd /mydata/elasticsearch/plugins
+yum install wget
+wget https://github.com/medcl/elasticsearch-analysis-ik/releases/download/v7.12.0/elasticsearch-analysis-ik-7.12.0.zip
+unzip elasticsearch-analysis-ik-7.12.0.zip -d ik
+
+ vi /etc/ssh/sshd_config
+ PasswordAuthentication yes
+ service sshd restart
+ 
 ```
 <a id="gitLab"></a>
 ## GitLab
