@@ -60,6 +60,7 @@
   - [Install by docker](#elasticsearch_install_by_docker)
 - [Kibana](#kibana)
   - [Install by docker](#kibana_install_by_docker)
+- [Elasticsearch-IK](#elasticsearch_ik)
 - [GitLab](#gitLab)
 - [Jenkins](#jenkins)
 - [Swagger](#swagger)
@@ -938,18 +939,32 @@ POST _reindex{
         "index": "new_index"
     }
 }
+ 
+```
 
-
+<a id="elasticsearch_ik"></a>
+## Elasticsearch-IK
+```
 cd /mydata/elasticsearch/plugins
 yum install wget
 wget https://github.com/medcl/elasticsearch-analysis-ik/releases/download/v7.12.0/elasticsearch-analysis-ik-7.12.0.zip
 unzip elasticsearch-analysis-ik-7.12.0.zip -d ik
+rm -rf elasticsearch-analysis-ik-7.12.0.zip
+
+mkdir /mydata/nginx/html/es
+vi /mydata/nginx/html/es/fenci.txt
+
+/mydata/elasticsearch/plugins/ik/config
+vi IKAnalyzer.cfg.xml
+<entry key="remote_ext_dict">http://192.168.56.66/es/fenci.txt</entry>
+docker restart elasticsearch
 
  vi /etc/ssh/sshd_config
  PasswordAuthentication yes
  service sshd restart
  
 ```
+
 <a id="gitLab"></a>
 ## GitLab
 </br>
