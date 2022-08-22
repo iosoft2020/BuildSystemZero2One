@@ -15,6 +15,7 @@
   - [Confirm resize status](#centos_confirm_resize_status)
   - [Ssh and use root login](#centos_ssh_and_use_root_login)
   - [Format the new disk](#centos_format_the_new_disk)
+- [Git](#git)
 - [Docker](#docker)
   - [Remove default docker](#docker_remove_default_docker)
   - [Install dependent package](#docker_install_dependent_package)
@@ -257,6 +258,14 @@ vagrant repository url:</br>
 ![alt text](images/Centos/centos36.png)</br>
 ![alt text](images/Centos/centos37.png)</br>
 
+
+</br>
+</br>
+
+<a id="git"></a>
+## Git
+- Install dependent package
+>yum install git -y</br>
 
 </br>
 </br>
