@@ -292,6 +292,15 @@ vagrant repository url:</br>
 >git branch -d dev</br>
 </br>
 </br>
+>- tag
+>git tag</br>
+>git tag -a "v1.0" -m "comment"</br>
+>>git tag -a "v1.0" commitno -m "comment"</br>
+>git tag -l</br>
+>git show v1.0</br>
+>git tag -d v1.0</br>
+</br>
+</br>
 >
 
 <a id="docker"></a>
