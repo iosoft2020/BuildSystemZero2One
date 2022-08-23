@@ -264,9 +264,16 @@ vagrant repository url:</br>
 
 <a id="git"></a>
 ## Git
-- Install dependent package
+- Install git
 >yum install git -y</br>
-
+>git status</br>
+>git add .</br>
+>git commit -m "xxxx"</br>
+>git diff (--cached) file1</br>
+>git log (--oneline)</br>
+- backup
+>git reset HEAD file1</br>
+>git checkout -- file1</br>
 </br>
 </br>
 
