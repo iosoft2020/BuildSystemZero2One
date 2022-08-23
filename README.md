@@ -274,6 +274,9 @@ vagrant repository url:</br>
 - backup
 >git reset HEAD file1</br>
 >git checkout -- file1</br>
+>- backup
+>git log --oneline</br>
+>git reset --hard version</br>
 </br>
 </br>
 
