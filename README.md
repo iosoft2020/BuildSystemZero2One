@@ -282,11 +282,16 @@ vagrant repository url:</br>
 >git reset --hard version</br>
 </br>
 </br>
->- branch
+>- create branch
 >git branch</br>
 >git branch dev</br>
 >git checkout dev</br>
 >git merge master -m "comment"</br>
+>- delete branch
+>git checkout master</br>
+>git branch -d dev</br>
+</br>
+</br>
 >
 
 <a id="docker"></a>
