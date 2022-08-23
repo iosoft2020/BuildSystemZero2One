@@ -282,6 +282,12 @@ vagrant repository url:</br>
 >git reset --hard version</br>
 </br>
 </br>
+>- branch
+>git branch</br>
+>git branch dev</br>
+>git checkout dev</br>
+>git merge master</br>
+>
 
 <a id="docker"></a>
 ## Docker
