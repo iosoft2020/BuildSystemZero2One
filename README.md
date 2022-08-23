@@ -277,6 +277,9 @@ vagrant repository url:</br>
 >- backup
 >git log --oneline</br>
 >git reset --hard version</br>
+>or
+>git reflog</br>
+>git reset --hard version</br>
 </br>
 </br>
 
