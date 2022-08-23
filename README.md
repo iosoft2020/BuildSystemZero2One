@@ -286,7 +286,7 @@ vagrant repository url:</br>
 >git branch</br>
 >git branch dev</br>
 >git checkout dev</br>
->git merge master</br>
+>git merge master -m "comment"</br>
 >
 
 <a id="docker"></a>
