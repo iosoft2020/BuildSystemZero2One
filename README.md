@@ -292,6 +292,7 @@ vagrant repository url:</br>
 >git branch -d dev</br>
 </br>
 </br>
+
 - tag
 >git tag</br>
 >git tag -a "v1.0" -m "comment"</br>
@@ -320,6 +321,11 @@ vagrant repository url:</br>
 >git add .</br>
 >git commit -m "add file"</br>
 >git push -u origin master</br>
+</br>
+</br>
+
+- pull
+>git pull origin master</br>
 </br>
 </br>
 
