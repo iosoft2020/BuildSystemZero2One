@@ -274,7 +274,7 @@ vagrant repository url:</br>
 - backup
 >git reset HEAD file1</br>
 >git checkout -- file1</br>
->- backup
+- backup
 >git log --oneline</br>
 >git reset --hard version</br>
 >or
@@ -282,17 +282,17 @@ vagrant repository url:</br>
 >git reset --hard version</br>
 </br>
 </br>
->- create branch
+- create branch
 >git branch</br>
 >git branch dev</br>
 >git checkout dev</br>
 >git merge master -m "comment"</br>
->- delete branch
+- delete branch
 >git checkout master</br>
 >git branch -d dev</br>
 </br>
 </br>
->- tag
+- tag
 >git tag</br>
 >git tag -a "v1.0" -m "comment"</br>
 >>git tag -a "v1.0" commitno -m "comment"</br>
@@ -301,19 +301,27 @@ vagrant repository url:</br>
 >git tag -d v1.0</br>
 </br>
 </br>
->- create key
+- create key
 >ssh-keygen</br>
 >enter*3
 >cat ~/.ssh/id_rsa.pub</br>
 >git push -u origin master</br>
 </br>
 </br>
->- push 
+- push 
 >git remote add origin git@xxx.com:xxxx/xxxxx.git</br>
 >git push -u origin master</br>
 </br>
 </br>
->
+
+- clone
+>git clone git@xxx.com:xxxx/xxxxx.git</br>
+>touch file</br>
+>git add .</br>
+>git commit -m "add file"</br>
+>git push -u origin master</br>
+</br>
+</br>
 
 <a id="docker"></a>
 ## Docker
