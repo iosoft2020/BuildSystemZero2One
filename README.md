@@ -16,6 +16,7 @@
   - [Ssh and use root login](#centos_ssh_and_use_root_login)
   - [Format the new disk](#centos_format_the_new_disk)
 - [Git](#git)
+- [GitLab](#gitlab)
 - [Docker](#docker)
   - [Remove default docker](#docker_remove_default_docker)
   - [Install dependent package](#docker_install_dependent_package)
@@ -326,6 +327,32 @@ vagrant repository url:</br>
 
 - pull
 >git pull origin master</br>
+</br>
+</br>
+
+
+<a id="gitlab"></a>
+## GitLab
+- Install
+>yum install -y policycoreutils-python</br>
+>systemctl start firewalld</br>
+>firewall-cmd --permanent --add-service=http</br>
+>systemctl reload firewalld</br>
+>yum install -y curl</br>
+>yum install -y openssh-server openssh-clients</br>
+>systemctl enable sshd</br>
+>systemctl start sshd</br>
+>yum install postfix</br>
+>systemctl enable postfix</br>
+>systemctl start postfix</br>
+>curl -sS https://packages.gitlab.com/install/repositories/gitlab/gitlab-ce/script.rpm.sh | sudo bash</br>
+>EXTERNAL_URL="http://192.168.56.66:8086" yum install -y gitlab-ce</br>
+>sudo gitlab-ctl start</br>
+</br>
+</br>
+- edit url
+>vi /etc/gitlab/gitlab.rb</br>
+external_url '192.168.56.66:8086'
 </br>
 </br>
 
