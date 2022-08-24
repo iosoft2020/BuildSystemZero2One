@@ -301,6 +301,18 @@ vagrant repository url:</br>
 >git tag -d v1.0</br>
 </br>
 </br>
+>- create key
+>ssh-keygen</br>
+>enter*3
+>cat ~/.ssh/id_rsa.pub</br>
+>git push -u origin master</br>
+</br>
+</br>
+>- push 
+>git remote add origin git@xxx.com:xxxx/xxxxx.git</br>
+>git push -u origin master</br>
+</br>
+</br>
 >
 
 <a id="docker"></a>
